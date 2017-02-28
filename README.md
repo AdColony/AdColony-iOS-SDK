@@ -27,8 +27,7 @@ AdColony Compass™ provides the tools to increase user engagement through targe
 
 Combined with AdColony’s award-winning Instant-Play™ HD video ads, Compass™ features can also stimulate monetization within apps. Compass™ tools allow publishers to incentivize desired user behaviors and improve KPI's for apps without heavy development work or altering carefully balanced in-app economies.
 
-To start using Compass™ today, follow this [link.](https://clients.adcolony.com/compass/info)
-Questions?  E-mail us at support@adcolony.com
+The Compass™ early access program has ended, and we are no longer accepting new partners for Compass™ access. Publishers who are currently using AdColony Compass™ services should email compass@adcolony.com for more details.
 
 *All* users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
