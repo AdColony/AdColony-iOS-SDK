@@ -307,25 +307,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             posts.remove(at: Constants.adViewCellIndex)
         }
     }
-    
-    
-    //===================================================
-    // MARK:- UITableViewDelegate
-    //===================================================
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
-    {
-        guard let adCell = cell as? FeedCellAd else { return }
-        
-        //Resume the ad if our table view is going to display it
-        adCell.adView?.resume()
-    }
-    
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath)
-    {
-        guard let adCell = cell as? FeedCellAd else { return }
-        
-        //Pause the ad if our table view is going to display it
-        adCell.adView?.pause()
-    }
 }

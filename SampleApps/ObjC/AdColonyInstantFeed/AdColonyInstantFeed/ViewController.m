@@ -281,23 +281,4 @@
     }
 }
 
-#pragma mark - UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Resume the ad if our table view is going to display it
-    if ([cell isKindOfClass:[FeedCellAd class]]) {
-        FeedCellAd* adCell = (FeedCellAd*)cell;
-        NSLog(@"Resuming ad view");
-        [adCell resume];
-    }
-}
-
-- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Pause the ad if our table view has finished displaying it
-    if ([cell isKindOfClass:[FeedCellAd class]]) {
-        FeedCellAd* adCell = (FeedCellAd*)cell;
-        NSLog(@"Pausing ad view");
-        [adCell pause];
-    }
-}
 @end

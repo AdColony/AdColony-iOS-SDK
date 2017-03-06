@@ -1,7 +1,7 @@
 AdColony iOS SDK
 ==================================
 Modified: December 9, 2016  
-SDK Version: 3.0.6
+SDK Version: 3.1.0
 
 iOS 10
 ----------------------------------
@@ -30,6 +30,18 @@ Combined with AdColony’s award-winning Instant-Play™ HD video ads, Compass�
 The Compass™ early access program has ended, and we are no longer accepting new partners for Compass™ access. Publishers who are currently using AdColony Compass™ services should email compass@adcolony.com for more details.
 
 *All* users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
+
+3.1.0 Change Log:
+----------------------------------
+- Capability to retrieve the net CPM bid value for a zone's next ad
+- MOAT viewability support
+- Internal viewable impression metrics
+- Support for dashboard's play frequency zone setting
+- Developers no longer required to pause/resume native ads
+- AdColonyCompass library no longer available in public build
+- Decreased compiled size of SDK
+- Fix for crash causing JavaScriptCore to run out of memory
+- Misc bugfixes
 
 3.0.6 Change Log:
 ----------------------------------
