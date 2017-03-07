@@ -29,7 +29,6 @@ Please also note that the Compass™ early access program has ended, and we are 
 
 3.1.0 Change Log:
 ----------------------------------
-- Capability to retrieve the net CPM bid value for a zone's next ad
 - MOAT viewability support
 - Internal viewable impression metrics
 - Support for dashboard's play frequency zone setting
