@@ -1,7 +1,7 @@
 AdColony iOS SDK
 ==================================
-Modified: March 6, 2017  
-SDK Version: 3.1.0
+Modified: March 29, 2017  
+SDK Version: 3.1.1
 
 iOS 10
 ----------------------------------
@@ -27,16 +27,22 @@ Please also note that the Compass™ early access program has ended, and we are 
 
 *All* users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
+3.1.1 Change Log:
+----------------------------------
+* Fix for intermittent orientation issue
+* Fix for a small memory leak in AdColony browser
+* Misc bugfixes
+
 3.1.0 Change Log:
 ----------------------------------
-- MOAT viewability support
-- Internal viewable impression metrics
-- Support for dashboard's play frequency zone setting
-- Developers no longer required to pause/resume native ads
-- AdColonyCompass library no longer available in public build
-- Decreased compiled size of SDK
-- Fix for crash causing JavaScriptCore to run out of memory
-- Misc bugfixes
+* MOAT viewability support
+* Internal viewable impression metrics
+* Support for dashboard's play frequency zone setting
+* Developers no longer required to pause/resume native ads
+* AdColonyCompass library no longer available in public build
+* Decreased compiled size of SDK
+* Fix for crash causing JavaScriptCore to run out of memory
+* Misc bugfixes
 
 3.0.6 Change Log:
 ----------------------------------
