@@ -30,8 +30,8 @@ Please note that updating from our 2.x SDK is not a drag and drop update, but ra
 
 ### Quick Start
 The basics of using the AdColony SDK to serve ads to your users are:
-1. Configure the service (once)
-1. Request an ad
+1. Configure the service
+1. Request an ad *(We recommend requesting a new ad when an ad expires)*
 1. Show the ad
 
 For example:
