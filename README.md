@@ -17,7 +17,7 @@ For detailed information about the AdColony SDK, see our [iOS SDK documentation]
 
 #### Manual
 
-1. Drag and drop the AdColony.framework into your project.
+1. Drag and drop the AdColony.framework into your project and refer to our [Xcode Project Setup](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/Xcode-Project-Setup#adding-the-framework-to-your-xcode-project) page for next steps.
 
 #### Cocoapods
 
