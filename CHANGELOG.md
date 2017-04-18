@@ -1,11 +1,11 @@
 # Change Log
 
-## 3.1.1 (2017/04/29)
+## 3.1.1 (2017/03/29)
 * Fix for intermittent orientation issue
 * Fix for a small memory leak in AdColony browser
 * Misc bugfixes
 
-## 3.1.0 (2017/04/06)
+## 3.1.0 (2017/03/06)
 * MOAT viewability support
 * Internal viewable impression metrics
 * Support for dashboard's play frequency zone setting
