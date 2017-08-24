@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.2.0 (2017/08/24)
+* iOS 11 compatibility along with several bugs fixes, stabilty and security improvements
+* User experience improvements via enhanced skippability controls and a new mute/unmute feature
+* Post-install events APIs in our SDK
+* Crash reporting and a new convenient test mode feature
+
 ## 3.1.1 (2017/03/29)
 * Fix for intermittent orientation issue
 * Fix for a small memory leak in AdColony browser
@@ -53,3 +59,4 @@
 * Optimized ad server communication protocols
 * Video-playing APIs now take a reference to presenting view controller
 * New APIs for option setting and configuring user metadata
+
