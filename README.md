@@ -14,7 +14,7 @@ To learn more about the AdColony SDK and integration tips, please check out this
 #### Key Features of the SDK 3.2:
 * iOS 11 compatibility along with several bugs fixes, stabilty and security improvements
 * User experience improvements via enhanced skippability controls and a new mute/unmute feature
-* Post-install events APIs in our SDK
+* Post-install events APIs
 * Crash reporting and a new convenient test mode feature
 
 Here is the link to the [release notes](https://github.com/AdColony/AdColony-Android-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions.

@@ -3,7 +3,7 @@
 ## 3.2.0 (2017/08/24)
 * iOS 11 compatibility along with several bugs fixes, stabilty and security improvements
 * User experience improvements via enhanced skippability controls and a new mute/unmute feature
-* Post-install events APIs in our SDK
+* Post-install events APIs
 * Crash reporting and a new convenient test mode feature
 
 ## 3.1.1 (2017/03/29)
