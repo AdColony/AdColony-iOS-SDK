@@ -16,7 +16,7 @@ AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https:/
 * Post-install events APIs
 * Crash reporting and a new convenient test mode feature
 
-Here is the link to the [release notes](https://github.com/AdColony/AdColony-Android-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions.
+Here is the link to the [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions.
 
 
 ## Getting Started
