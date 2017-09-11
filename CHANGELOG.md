@@ -1,5 +1,10 @@
 # Change Log
 
+## 3.2.1 (2017/09/11)
+* Fix for intermittent orientation issue discovered on iOS 11
+* Fix for crash in ADCLogManager
+* Misc bugfixes
+
 ## 3.2.0 (2017/08/24)
 * iOS 11 compatibility along with several bugs fixes, stabilty and security improvements
 * User experience improvements via enhanced skippability controls and a new mute/unmute feature
