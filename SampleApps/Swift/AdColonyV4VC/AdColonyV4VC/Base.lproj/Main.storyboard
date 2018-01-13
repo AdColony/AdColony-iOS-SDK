@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,42 +19,33 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="QUJ-7m-w1c">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text" translatesAutoresizingMaskIntoConstraints="NO" id="UT9-RV-wdJ">
-                                <rect key="frame" x="193" y="256" width="215" height="88"/>
+                                <rect key="frame" x="80" y="289.5" width="215" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="nfh-Q4-lqM"/>
                                     <constraint firstAttribute="height" constant="88" id="vlI-FX-jdU"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="83" y="292" width="635" height="216"/>
-                                </variation>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZi-Y2-BZf">
-                                <rect key="frame" x="100" y="463" width="400" height="92"/>
+                                <rect key="frame" x="-12.5" y="530" width="400" height="92"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="bS5-uo-nHf">
                                         <rect key="frame" x="20" y="27" width="37" height="37"/>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="20" y="27" width="37" height="37"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="20" y="27" width="37" height="37"/>
-                                        </variation>
                                     </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading videos..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L00-h4-Fpp">
                                         <rect key="frame" x="65" y="28" width="197" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="197" id="IYX-2T-wP8"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="IYX-2T-wP8"/>
                                             <constraint firstAttribute="height" constant="35" id="sKm-Xp-IYF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -58,9 +53,8 @@
                                         <variation key="heightClass=compact-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                            <rect key="frame" x="97" y="16" width="249" height="32"/>
                                         </variation>
                                     </label>
                                     <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yX-vL-0lF">
@@ -70,12 +64,9 @@
                                             <constraint firstAttribute="height" constant="49" id="MnQ-2V-bqm"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Button">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="Button-Press"/>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="20" y="0.0" width="253" height="65"/>
-                                        </variation>
                                         <connections>
                                             <action selector="triggerVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joY-Nn-O7m"/>
                                         </connections>
@@ -93,7 +84,7 @@
                                             <constraint firstAttribute="height" constant="32" id="DaI-XL-w32"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -122,12 +113,9 @@
                                     <constraint firstItem="IFl-x2-JyU" firstAttribute="leading" secondItem="0yX-vL-0lF" secondAttribute="trailing" constant="45" id="qJN-82-Acc"/>
                                     <constraint firstItem="LJn-TX-lYH" firstAttribute="leading" secondItem="IFl-x2-JyU" secondAttribute="trailing" constant="17" id="txf-ij-MCI"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="218" y="617" width="364" height="92"/>
-                                </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WZi-Y2-BZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5T4-H7-pv9"/>
                             <constraint firstItem="QUJ-7m-w1c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="6Fx-U7-r4p"/>
@@ -154,9 +142,9 @@
     </scenes>
     <resources>
         <image name="Background" width="1024" height="1024"/>
-        <image name="Button" width="306" height="90"/>
-        <image name="Button-Press" width="306" height="90"/>
-        <image name="Coin" width="40" height="40"/>
-        <image name="Text" width="635" height="216"/>
+        <image name="Button" width="153" height="45"/>
+        <image name="Button-Press" width="153" height="45"/>
+        <image name="Coin" width="20" height="20"/>
+        <image name="Text" width="317" height="108"/>
     </resources>
 </document>

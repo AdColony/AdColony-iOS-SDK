@@ -40,7 +40,15 @@ class ViewController: UIViewController
                 self.requestInterstitial()
                 
                 //If the application has been inactive for a while, our ad might have expired so let's add a check for a nil ad object
-                NotificationCenter.default.addObserver(self, selector:#selector(ViewController.onBecameActive), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+                NotificationCenter.default.addObserver(forName: .UIApplicationDidBecomeActive,
+                                                       object: nil,
+                                                       queue: OperationQueue.main,
+                                                       using: { notification in
+                                                            //If our ad has expired, request a new interstitial
+                                                            if (self.ad == nil) {
+                                                                self.requestInterstitial()
+                                                            }
+                                                        })
             }
         )
         
@@ -140,16 +148,4 @@ class ViewController: UIViewController
         }
     }
     
-    
-    //=============================================
-    // MARK:- Event Handlers
-    //=============================================
-
-    func onBecameActive()
-    {
-        //If our ad has expired, request a new interstitial
-        if (self.ad == nil) {
-            self.requestInterstitial()
-        }
-    }
 }
