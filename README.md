@@ -11,10 +11,9 @@ AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https:/
 ## Release Notes
 
 #### Key Features of the SDK 3.3:
-* iOS 11 compatibility along with several bugs fixes, stabilty and security improvements
-* User experience improvements via enhanced skippability controls and a new mute/unmute feature
-* Post-install events APIs
-* Crash reporting and a new convenient test mode feature
+* Added Integral Ad Science (IAS) for viewability measurement.
+* iPhoneX support
+* Several bug fixes, memory usage optimizations, and stability improvements.
 
 Here is the link to the [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and please check out the 3.3.0 SDK [integration tips](https://www.adcolony.com/blog/2017/09/14/6-steps-optimize-321-sdk-integration/).
 
