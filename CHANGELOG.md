@@ -1,5 +1,10 @@
 # Change Log
 
+## 3.3.0 (2018/01/12)
+* Added Integral Ad Science (IAS) for viewability measurement.
+* iPhoneX support
+* Several bug fixes, memory usage optimizations, and stability improvements.
+
 ## 3.2.1 (2017/09/11)
 * Fix for intermittent orientation issue discovered on iOS 11
 * Fix for crash in ADCLogManager
