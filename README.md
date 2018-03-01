@@ -15,7 +15,7 @@ AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https:/
 * iPhoneX support
 * Several bug fixes, memory usage optimizations, and stability improvements.
 
-Here is the link to the [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and please check out the 3.3.0 SDK [integration tips](https://www.adcolony.com/blog/2017/09/14/6-steps-optimize-321-sdk-integration/).
+Here is the link to the [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and please check out the 3.3.0 SDK [integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
 
 
 ## Getting Started
