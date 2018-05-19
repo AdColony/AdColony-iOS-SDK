@@ -10,27 +10,22 @@ AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https:/
 
 ## Release Notes
 
-### 3.3.4 (2018/05/18)
+### 3.3.4
 * Added a new API to pass user consent as required for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of this new API to inform AdColony and all downstream consumers of the consent. Please see our [GDPR FAQ](https://www.adcolony.com/gdpr/) for more information and [our GDPR wiki](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/GDPR) for implementation details.
 * Fixed a bug where advertisement video's close button was not easily tappable because of the status bar overlapping.
 * Fixed a bug where unsafe access to the device's battery level was causing a crash.
 * Several bug fixes and stability improvements.
 
-#### Key Features of the SDK 3.3:
-* Integral Ad Science (IAS) for viewability measurement
-* iPhoneX support
-
-Here is the link to the [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and please check out the 3.3.0 SDK [integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
-
+Here is the link to the [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and please check out the 3.3 SDK [integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
 
 ## Getting Started
 To get started, here is the link to [iOS SDK integration documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
 **Note:**
 
-* SDK 3.3.0 is tested and verified on iOS 11
-* SDK 3.3.0 compiles on iOS 6; however, video ads will only show on iOS 8 and above.
-* SDK 3.3.0 is not backwards compatible with any AdColony 2.0 integrations due to major API changes.
+* SDK 3.3 is tested and verified on iOS 11
+* SDK 3.3 compiles on iOS 6; however, video ads will only show on iOS 8 and above.
+* SDK 3.3 is not backwards compatible with any AdColony 2.0 integrations due to major API changes.
 
 ## Upgrade
 
