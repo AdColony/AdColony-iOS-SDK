@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.3.4 (2018/05/18)
+* Added a new API to pass user consent as required for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of this new API to inform AdColony and all downstream consumers of the consent. Please see our [GDPR FAQ](https://www.adcolony.com/gdpr/) for more information and [our GDPR wiki](wiki/GDPR) for implementation details.
+* Fixed a bug where advertisement video's close button was not easily tappable because of the status bar overlapping.
+* Fixed a bug where unsafe access to the device's battery level was causing a crash.
+* Several bug fixes and stability improvements.
+
 ## 3.3.0 (2018/01/12)
 * Added Integral Ad Science (IAS) for viewability measurement.
 * iPhoneX support
@@ -69,4 +75,3 @@
 * Optimized ad server communication protocols
 * Video-playing APIs now take a reference to presenting view controller
 * New APIs for option setting and configuring user metadata
-

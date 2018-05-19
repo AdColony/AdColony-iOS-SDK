@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: Jan 12th, 2018
-* SDK Version: 3.3.0
+* Modified: May 18th, 2018
+* SDK Version: 3.3.4
 
 
 ## Overview
@@ -10,10 +10,15 @@ AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https:/
 
 ## Release Notes
 
+### 3.3.4 (2018/05/18)
+* Added a new API to pass user consent as required for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of this new API to inform AdColony and all downstream consumers of the consent. Please see our [GDPR FAQ](https://www.adcolony.com/gdpr/) for more information and [our GDPR wiki](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/GDPR) for implementation details.
+* Fixed a bug where advertisement video's close button was not easily tappable because of the status bar overlapping.
+* Fixed a bug where unsafe access to the device's battery level was causing a crash.
+* Several bug fixes and stability improvements.
+
 #### Key Features of the SDK 3.3:
-* Added Integral Ad Science (IAS) for viewability measurement.
+* Integral Ad Science (IAS) for viewability measurement
 * iPhoneX support
-* Several bug fixes, memory usage optimizations, and stability improvements.
 
 Here is the link to the [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and please check out the 3.3.0 SDK [integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
 
@@ -45,4 +50,3 @@ Note that U.S. based companies will need to complete the W-9 form and send it to
 
 ## Contact Us
 For more information, please visit AdColony.com. For questions or assistance, please email us at support@adcolony.com.
-
