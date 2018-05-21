@@ -13,7 +13,7 @@ AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https:/
 ### 3.3.4
 * Added a new API to pass user consent as required for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of this new API to inform AdColony and all downstream consumers of the consent. Please see our [GDPR FAQ](https://www.adcolony.com/gdpr/) for more information and [our GDPR wiki](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/GDPR) for implementation details.
 * Fixed a bug where advertisement video's close button was not easily tappable because of the status bar overlapping.
-* Fixed a bug where unsafe access to the device's battery level was causing a crash mentioned in issue #49.
+* Fixed a bug where unsafe access to the device's battery level was causing a crash mentioned in issue [#49] (https://github.com/AdColony/AdColony-iOS-SDK-3/issues/49).
 * Several bug fixes and stability improvements.
 
 Here is the link to the [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and please check out the 3.3 SDK [integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
