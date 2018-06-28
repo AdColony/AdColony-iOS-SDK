@@ -1,5 +1,8 @@
 # Change Log
 
+## 3.3.5 (2018/06/28)
+* Removed requirement for the camera and calendar permissions. However, with these permissions enabled, you may be able to receive higher paying ads.
+
 ## 3.3.4 (2018/05/18)
 * Added a new API to pass user consent as required for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of this new API to inform AdColony and all downstream consumers of the consent. Please see our [GDPR FAQ](https://www.adcolony.com/gdpr/) for more information and [our GDPR wiki](wiki/GDPR) for implementation details.
 * Fixed a bug where advertisement video's close button was not easily tappable because of the status bar overlapping.
