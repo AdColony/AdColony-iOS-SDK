@@ -14,15 +14,12 @@
 		9FE091281A65B4CB001AA326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE091271A65B4CB001AA326 /* ViewController.swift */; };
 		9FE0912B1A65B4CB001AA326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE091291A65B4CB001AA326 /* Main.storyboard */; };
 		9FE0912D1A65B4CB001AA326 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE0912C1A65B4CB001AA326 /* Images.xcassets */; };
-		9FE091581A65B546001AA326 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091481A65B546001AA326 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9FE091581A65B546001AA326 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091481A65B546001AA326 /* AdSupport.framework */; };
 		9FE091591A65B546001AA326 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091491A65B546001AA326 /* AudioToolbox.framework */; };
 		9FE0915A1A65B546001AA326 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914A1A65B546001AA326 /* AVFoundation.framework */; };
-		9FE0915B1A65B546001AA326 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914B1A65B546001AA326 /* CoreGraphics.framework */; };
 		9FE0915C1A65B546001AA326 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914C1A65B546001AA326 /* CoreMedia.framework */; };
 		9FE0915D1A65B546001AA326 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914D1A65B546001AA326 /* CoreTelephony.framework */; };
-		9FE091611A65B546001AA326 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091511A65B546001AA326 /* MediaPlayer.framework */; };
 		9FE091621A65B546001AA326 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091521A65B546001AA326 /* MessageUI.framework */; };
-		9FE091631A65B546001AA326 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091531A65B546001AA326 /* QuartzCore.framework */; };
 		9FE091641A65B546001AA326 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091541A65B546001AA326 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9FE091661A65B546001AA326 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091561A65B546001AA326 /* SystemConfiguration.framework */; };
 		9FE091671A65B546001AA326 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091571A65B546001AA326 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -30,8 +27,6 @@
 		B72499971FF455E500432118 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72499961FF455E500432118 /* MobileCoreServices.framework */; };
 		B72499991FF455EC00432118 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72499981FF455EC00432118 /* JavaScriptCore.framework */; };
 		B724999B1FF455F000432118 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B724999A1FF455F000432118 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B72499A31FF45FA900432118 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914E1A65B546001AA326 /* EventKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B72499A41FF45FA900432118 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914F1A65B546001AA326 /* EventKitUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,25 +82,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B72499A31FF45FA900432118 /* EventKit.framework in Frameworks */,
-				B72499A41FF45FA900432118 /* EventKitUI.framework in Frameworks */,
-				B724999B1FF455F000432118 /* StoreKit.framework in Frameworks */,
-				B72499991FF455EC00432118 /* JavaScriptCore.framework in Frameworks */,
-				B72499971FF455E500432118 /* MobileCoreServices.framework in Frameworks */,
-				9FE0915C1A65B546001AA326 /* CoreMedia.framework in Frameworks */,
-				B72499951FF455D700432118 /* WatchConnectivity.framework in Frameworks */,
+				581A657A1D46D98F0056EA3D /* libz.1.2.5.tbd in Frameworks */,
+				17E727D21B1CDD4400143D53 /* AdColony.framework in Frameworks */,
 				9FE091581A65B546001AA326 /* AdSupport.framework in Frameworks */,
 				9FE091591A65B546001AA326 /* AudioToolbox.framework in Frameworks */,
 				9FE0915A1A65B546001AA326 /* AVFoundation.framework in Frameworks */,
-				9FE0915B1A65B546001AA326 /* CoreGraphics.framework in Frameworks */,
-				17E727D21B1CDD4400143D53 /* AdColony.framework in Frameworks */,
+				9FE0915C1A65B546001AA326 /* CoreMedia.framework in Frameworks */,
 				9FE0915D1A65B546001AA326 /* CoreTelephony.framework in Frameworks */,
-				581A657A1D46D98F0056EA3D /* libz.1.2.5.tbd in Frameworks */,
-				9FE091611A65B546001AA326 /* MediaPlayer.framework in Frameworks */,
+				B72499991FF455EC00432118 /* JavaScriptCore.framework in Frameworks */,
 				9FE091621A65B546001AA326 /* MessageUI.framework in Frameworks */,
-				9FE091631A65B546001AA326 /* QuartzCore.framework in Frameworks */,
+				B72499971FF455E500432118 /* MobileCoreServices.framework in Frameworks */,
 				9FE091641A65B546001AA326 /* Social.framework in Frameworks */,
+				B724999B1FF455F000432118 /* StoreKit.framework in Frameworks */,
 				9FE091661A65B546001AA326 /* SystemConfiguration.framework in Frameworks */,
+				B72499951FF455D700432118 /* WatchConnectivity.framework in Frameworks */,
 				9FE091671A65B546001AA326 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
