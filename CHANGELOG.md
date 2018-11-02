@@ -1,5 +1,10 @@
 # Change Log
 
+## 3.3.6 (2018/11/02)
+* Added support for silencing audio with the Ringer/Silent switch. This is configurable on the clients.adcolony.com dashboard.
+* Audio session will not activate until an ad plays.
+* Several bug fixes and stability improvements.
+
 ## 3.3.5 (2018/06/28)
 * Removed requirement for the camera and calendar permissions. However, with these permissions enabled, you may be able to receive higher paying ads.
 
