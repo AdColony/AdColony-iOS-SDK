@@ -37,8 +37,8 @@ To get started, here is the link to
 
 **Note:**
 
-* Tested and verified on iOS 11
-* Compiles on iOS 6; however, video ads will only show on iOS 8 and above.
+* Tested and verified on iOS 12
+* Works on iOS 8 and above.
 * Not backwards compatible with any AdColony 2.0 integrations due to major API changes.
 
 ## Upgrading
