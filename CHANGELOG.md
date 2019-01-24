@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.3.6 (2019/01/24)
+* Fixed a CPU watchdog transgression.
+* Fixed a memory leak that could cause UIView objects to stay in
+  memory past their lifetime.
+* Added advanced logging for inconsistent view controller
+  orientations.
+* Several other bug fixes and stability improvements.
+
 ## 3.3.6 (2018/11/02)
 * Added support for silencing audio with the Ringer/Silent switch. This is configurable on the clients.adcolony.com dashboard.
 * Audio session will not activate until an ad plays.

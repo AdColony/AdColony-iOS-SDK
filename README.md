@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: Nov 2nd, 2018
-* SDK Version: 3.3.6
+* Modified: Jan 24th, 2019
+* SDK Version: 3.3.7
 
 ## Overview
 
@@ -18,12 +18,14 @@ playable ads.
 
 ## Release Notes
 
-### 3.3.6
+### 3.3.7
 
-* Added support for silencing audio with the Ringer/Silent
-  switch. This is configurable on the clients.adcolony.com dashboard.
-* Audio session will not activate until an ad plays.
-* Several bug fixes and stability improvements.
+* Fixed a CPU watchdog transgression.
+* Fixed a memory leak that could cause UIView objects to stay in
+  memory past their lifetime.
+* Added advanced logging for inconsistent view controller
+  orientations.
+* Several other bug fixes and stability improvements.
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md)
