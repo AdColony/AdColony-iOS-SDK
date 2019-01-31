@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.3.6 (2019/01/24)
+## 3.3.7 (2019/01/24)
 * Fixed a CPU watchdog transgression.
 * Fixed a memory leak that could cause UIView objects to stay in
   memory past their lifetime.
