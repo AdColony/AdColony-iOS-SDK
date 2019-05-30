@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: Jan 24th, 2019
-* SDK Version: 3.3.7
+* Modified: May 30th, 2019
+* SDK Version: 3.3.8
 
 ## Overview
 
@@ -18,13 +18,10 @@ playable ads.
 
 ## Release Notes
 
-### 3.3.7
+### 3.3.8
 
-* Fixed a CPU watchdog transgression.
-* Fixed a memory leak that could cause UIView objects to stay in
-  memory past their lifetime.
-* Added advanced logging for inconsistent view controller
-  orientations.
+* Added custom view container size for StoreKit
+* Reduced memory consumption
 * Several other bug fixes and stability improvements.
 
 Here is the link to the

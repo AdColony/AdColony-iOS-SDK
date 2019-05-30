@@ -1,4 +1,8 @@
 # Change Log
+## 3.3.8 (2019/05/30)
+* Added custom view container size for StoreKit
+* Reduced memory consumption
+* Several other bug fixes and stability improvements.
 
 ## 3.3.7 (2019/01/24)
 * Fixed a CPU watchdog transgression.
