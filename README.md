@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: May 30th, 2019
-* SDK Version: 3.3.8
+* Modified: June 11th, 2019
+* SDK Version: 3.3.8.1
 
 ## Overview
 
@@ -18,11 +18,9 @@ playable ads.
 
 ## Release Notes
 
-### 3.3.8
+### 3.3.8.1
 
-* Added custom view container size for StoreKit
-* Reduced memory consumption
-* Several other bug fixes and stability improvements.
+* Fixed a bug where click action for some of the ads was not working.
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md)

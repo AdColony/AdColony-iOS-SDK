@@ -1,4 +1,7 @@
 # Change Log
+## 3.3.8.1 (2019/06/11)
+* Fixed a bug where click action for some of the ads was not working.
+
 ## 3.3.8 (2019/05/30)
 * Added custom view container size for StoreKit
 * Reduced memory consumption
