@@ -20,7 +20,7 @@ playable ads.
 
 ### 3.3.8.1
 
-* Fixed a bug where click action for some of the ads was not working.
+* Fixed the bug where click action was not working for some of the ad types.
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md)
