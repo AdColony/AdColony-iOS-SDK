@@ -17,9 +17,7 @@
 #pragma mark - ViewController Interface
 
 @interface ViewController ()
-{
-    AdColonyInterstitial *_ad;
-}
+@property (nonatomic, strong) AdColonyInterstitial *ad;
 @property (weak, nonatomic) IBOutlet UIButton *launchButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
@@ -63,6 +61,7 @@
 
 - (void)requestInterstitial {
     //Request an interstitial ad from AdColony
+    __weak ViewController *weakSelf = self;
     [AdColony requestInterstitialInZone:kAdColonyZoneID options:nil
      
         //Handler for successful ad requests
@@ -70,25 +69,25 @@
             
             //Once the ad has finished, set the loading state and request a new interstitial
             ad.close = ^{
-                _ad = nil;
+                weakSelf.ad = nil;
                 
-                [self setLoadingState];
-                [self requestInterstitial];
+                [weakSelf setLoadingState];
+                [weakSelf requestInterstitial];
             };
             
             //Interstitials can expire, so we need to handle that event also
             ad.expire = ^{
-                _ad = nil;
+                weakSelf.ad = nil;
                 
-                [self setLoadingState];
-                [self requestInterstitial];
+                [weakSelf setLoadingState];
+                [weakSelf requestInterstitial];
             };
             
             //Store a reference to the returned interstitial object
-            _ad = ad;
+            weakSelf.ad = ad;
             
             //Show the user we are ready to play a video
-            [self setReadyState];
+            [weakSelf setReadyState];
         }
      
         //Handler for failed ad requests
@@ -100,32 +99,32 @@
 
 - (IBAction)launchInterstitial:(id)sender {
     //Display our ad to the user
-    if (!_ad.expired) {
-        [_ad showWithPresentingViewController:self];
+    if (!self.ad.expired) {
+        [self.ad showWithPresentingViewController:self];
     }
 }
 
 #pragma mark - UI
 
 - (void)setLoadingState {
-    _launchButton.hidden = YES;
-    _launchButton.alpha = 0.0;
-    _loadingLabel.hidden = NO;
-    [_spinner startAnimating];
+    self.launchButton.hidden = YES;
+    self.launchButton.alpha = 0.0;
+    self.loadingLabel.hidden = NO;
+    [self.spinner startAnimating];
 }
 
 -(void)setReadyState {
-    _loadingLabel.hidden = YES;
-    _launchButton.hidden = NO;
-    [_spinner stopAnimating];
-    [UIView animateWithDuration:1.0 animations:^{ _launchButton.alpha = 1.; } completion:nil];
+    self.loadingLabel.hidden = YES;
+    self.launchButton.hidden = NO;
+    [self.spinner stopAnimating];
+    [UIView animateWithDuration:1.0 animations:^{ self.launchButton.alpha = 1.; } completion:nil];
 }
 
 #pragma mark - Event Handlers
 
 -(void)onBecameActive {
     //If our ad has expired, request a new interstitial
-    if (!_ad) {
+    if (!self.ad) {
         [self requestInterstitial];
     }
 }
