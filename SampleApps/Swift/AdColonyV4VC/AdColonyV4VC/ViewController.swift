@@ -68,7 +68,7 @@ class ViewController: UIViewController
                 })
                 
                 //If the application has been inactive for a while, our ad might have expired so let's add a check for a nil ad object
-                NotificationCenter.default.addObserver(forName: .UIApplicationDidBecomeActive,
+                NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification,
                                                        object: nil,
                                                        queue: OperationQueue.main,
                                                        using: { notification in
@@ -84,9 +84,9 @@ class ViewController: UIViewController
         )
         
         if UIDevice.current.userInterfaceIdiom == .pad {
-            self.spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
+            self.spinner.style = UIActivityIndicatorView.Style.whiteLarge
         } else {
-            self.spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
+            self.spinner.style = UIActivityIndicatorView.Style.white
         }
         
         self.updateCurrencyBalance()
