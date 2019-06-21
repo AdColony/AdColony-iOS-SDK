@@ -40,7 +40,7 @@ class ViewController: UIViewController
                 self.requestInterstitial()
                 
                 //If the application has been inactive for a while, our ad might have expired so let's add a check for a nil ad object
-                NotificationCenter.default.addObserver(forName: .UIApplicationDidBecomeActive,
+                NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification,
                                                        object: nil,
                                                        queue: OperationQueue.main,
                                                        using: { notification in
