@@ -20,9 +20,7 @@
 #pragma mark - ViewController Interface
 
 @interface ViewController ()
-{
-    AdColonyInterstitial *_ad;
-}
+@property (nonatomic, strong) AdColonyInterstitial *ad;
 @property (weak, nonatomic) IBOutlet UIImageView *background;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UILabel *currencyLabel;
@@ -74,9 +72,9 @@
     }];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        [_spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        [self.spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
     } else {
-        [_spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
+        [self.spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
     }
     
     [self updateCurrencyBalance];
@@ -99,6 +97,7 @@
 
 - (void)requestInterstitial {
     //Request an interstitial ad from AdColony
+    __weak ViewController *weakSelf = self;
     [AdColony requestInterstitialInZone:kAdColonyZoneID options:nil
      
         //Handler for successful ad requests
@@ -106,7 +105,7 @@
             
             //Once the ad has finished, set the loading state and request a new interstitial
             ad.close = ^{
-                _ad = nil;
+                weakSelf.ad = nil;
                 
                 [self setLoadingState];
                 [self requestInterstitial];
@@ -114,17 +113,17 @@
                                     
             //Interstitials can expire, so we need to handle that event also
             ad.expire = ^{
-                _ad = nil;
+                weakSelf.ad = nil;
                 
                 [self setLoadingState];
                 [self requestInterstitial];
             };
                                     
             //Store a reference to the returned interstitial object
-            _ad = ad;
+            weakSelf.ad = ad;
                                     
             //Show the user we are ready to play a video
-            [self setReadyState];
+            [weakSelf setReadyState];
         }
      
         //Handler for failed ad requests
@@ -136,39 +135,39 @@
 
 - (IBAction)triggerVideo {
     //Display our ad to the user
-    if (!_ad.expired) {
-        [_ad showWithPresentingViewController:self];
+    if (!self.ad.expired) {
+        [self.ad showWithPresentingViewController:self];
     }
 }
 
 #pragma mark - UI
 
 - (void)setLoadingState {
-    [_spinner setHidden:NO];
-    [_spinner startAnimating];
-    [_button setAlpha:0.];
-    [UIView animateWithDuration:.5 animations:^{ _statusLabel.alpha = 1.; } completion:nil];
+    [self.spinner setHidden:NO];
+    [self.spinner startAnimating];
+    [self.button setAlpha:0.];
+    [UIView animateWithDuration:.5 animations:^{ self.statusLabel.alpha = 1.; } completion:nil];
 }
 
 - (void)setReadyState {
-    [_spinner stopAnimating];
-    [_spinner setHidden:YES];
-    [_statusLabel setAlpha:0.];
-    [UIView animateWithDuration:1.0 animations:^{ _button.alpha = 1.; } completion:nil];
+    [self.spinner stopAnimating];
+    [self.spinner setHidden:YES];
+    [self.statusLabel setAlpha:0.];
+    [UIView animateWithDuration:1.0 animations:^{ self.button.alpha = 1.; } completion:nil];
 }
 
 - (void)updateCurrencyBalance {
     //Get currency balance from persistent storage and display it
     NSNumber* wrappedBalance = [[NSUserDefaults standardUserDefaults] objectForKey:kCurrencyBalance];
     NSUInteger balance = wrappedBalance && [wrappedBalance isKindOfClass:[NSNumber class]] ? [wrappedBalance unsignedIntValue] : 0;
-    [_currencyLabel setText:[NSString stringWithFormat:@"%lu", (unsigned long)balance]];
+    [self.currencyLabel setText:[NSString stringWithFormat:@"%lu", (unsigned long)balance]];
 }
 
 #pragma mark - Event Handlers
 
 -(void)onBecameActive {
     //If our ad has expired, request a new interstitial
-    if (!_ad) {
+    if (!self.ad) {
         [self requestInterstitial];
     }
 }
