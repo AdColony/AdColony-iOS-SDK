@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,14 +16,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="RLs-kl-wCJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text" translatesAutoresizingMaskIntoConstraints="NO" id="HId-X7-Y6r">
-                                <rect key="frame" x="44.5" y="292" width="286" height="83"/>
+                                <rect key="frame" x="22.333333333333343" y="394.33333333333331" width="369.66666666666663" height="107.33333333333331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="572" id="3vp-FY-b46"/>
                                     <constraint firstAttribute="height" constant="25" id="l0E-QQ-pgP"/>
@@ -54,7 +52,7 @@
                                 </variation>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Viq-Ag-A6f">
-                                <rect key="frame" x="57" y="590" width="261" height="50"/>
+                                <rect key="frame" x="76.666666666666686" y="785" width="261" height="50"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lrC-Ef-tmk">
                                         <rect key="frame" x="8" y="7" width="37" height="37"/>
@@ -83,7 +81,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fri-sU-pHU">
-                                <rect key="frame" x="88" y="595" width="199" height="45"/>
+                                <rect key="frame" x="107.66666666666669" y="790" width="199" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="5t4-w8-b18"/>
                                     <constraint firstAttribute="height" constant="79" id="TV8-Ws-Zqb"/>
@@ -109,7 +107,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="HId-X7-Y6r" secondAttribute="centerX" id="28a-PJ-Iy3"/>
                             <constraint firstAttribute="centerY" secondItem="HId-X7-Y6r" secondAttribute="centerY" id="5hD-cV-TZT"/>
@@ -118,7 +116,7 @@
                             <constraint firstItem="RLs-kl-wCJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BB0-6Z-hQe"/>
                             <constraint firstItem="RLs-kl-wCJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BeP-L2-Ec0"/>
                             <constraint firstAttribute="trailing" secondItem="RLs-kl-wCJ" secondAttribute="trailing" id="CBy-TT-OOO"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RLs-kl-wCJ" secondAttribute="bottom" id="JFQ-4m-SJM"/>
+                            <constraint firstAttribute="bottom" secondItem="RLs-kl-wCJ" secondAttribute="bottom" id="UNs-Oj-CvO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fri-sU-pHU" secondAttribute="bottom" constant="27" id="bEL-QX-hXU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fri-sU-pHU" secondAttribute="bottom" constant="27" id="bZb-8b-rja"/>
                             <constraint firstItem="Viq-Ag-A6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hd3-dX-22n"/>
@@ -158,9 +156,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="1024" height="1024"/>
-        <image name="Button" width="199" height="45"/>
-        <image name="Button-Press" width="199" height="45"/>
-        <image name="Text" width="286" height="83"/>
+        <image name="Background" width="682.66668701171875" height="682.66668701171875"/>
+        <image name="Button" width="199" height="45.333332061767578"/>
+        <image name="Button-Press" width="199" height="45.333332061767578"/>
+        <image name="Text" width="369.66665649414062" height="107.33333587646484"/>
     </resources>
 </document>

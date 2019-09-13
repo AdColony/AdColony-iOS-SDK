@@ -16,11 +16,15 @@
 
 #pragma mark - ViewController Interface
 
-@interface ViewController ()
-@property (nonatomic, strong) AdColonyInterstitial *ad;
-@property (weak, nonatomic) IBOutlet UIButton *launchButton;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
-@property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
+@interface ViewController () <AdColonyInterstitialDelegate>
+
+@property (nonatomic, weak) AdColonyInterstitial *ad;
+
+@property (nonatomic, weak) IBOutlet UIImageView *background;
+@property (nonatomic, weak) IBOutlet UIButton *launchButton;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *spinner;
+@property (nonatomic, weak) IBOutlet UILabel *loadingLabel;
+
 @end
 
 
@@ -61,40 +65,7 @@
 
 - (void)requestInterstitial {
     //Request an interstitial ad from AdColony
-    __weak ViewController *weakSelf = self;
-    [AdColony requestInterstitialInZone:kAdColonyZoneID options:nil
-     
-        //Handler for successful ad requests
-        success:^(AdColonyInterstitial *ad) {
-            
-            //Once the ad has finished, set the loading state and request a new interstitial
-            ad.close = ^{
-                weakSelf.ad = nil;
-                
-                [weakSelf setLoadingState];
-                [weakSelf requestInterstitial];
-            };
-            
-            //Interstitials can expire, so we need to handle that event also
-            ad.expire = ^{
-                weakSelf.ad = nil;
-                
-                [weakSelf setLoadingState];
-                [weakSelf requestInterstitial];
-            };
-            
-            //Store a reference to the returned interstitial object
-            weakSelf.ad = ad;
-            
-            //Show the user we are ready to play a video
-            [weakSelf setReadyState];
-        }
-     
-        //Handler for failed ad requests
-        failure:^(AdColonyAdRequestError *error) {
-            NSLog(@"SAMPLE_APP: Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
-        }
-     ];
+    [AdColony requestInterstitialInZone:kAdColonyZoneID options:nil andDelegate:self];
 }
 
 - (IBAction)launchInterstitial:(id)sender {
@@ -102,6 +73,30 @@
     if (!self.ad.expired) {
         [self.ad showWithPresentingViewController:self];
     }
+}
+
+- (void)adColonyInterstitialDidLoad:(AdColonyInterstitial *)interstitial {
+    //Store a reference to the returned interstitial object
+    self.ad = interstitial;
+    
+    //Show the user we are ready to play a video
+    [self setReadyState];
+}
+
+- (void)adColonyInterstitialExpired:(AdColonyInterstitial *)interstitial  {
+    self.ad = nil;
+    
+    [self setLoadingState];
+    [self requestInterstitial];
+}
+
+- (void)adColonyInterstitialDidFailToLoad:(AdColonyAdRequestError *)error {
+    NSLog(@"SAMPLE_APP: Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
+}
+
+- (void)adColonyInterstitialDidClose:(AdColonyInterstitial *)interstitial {
+    [self setLoadingState];
+    [self requestInterstitial];
 }
 
 #pragma mark - UI
@@ -113,7 +108,7 @@
     [self.spinner startAnimating];
 }
 
--(void)setReadyState {
+- (void)setReadyState {
     self.loadingLabel.hidden = YES;
     self.launchButton.hidden = NO;
     [self.spinner stopAnimating];
@@ -122,10 +117,11 @@
 
 #pragma mark - Event Handlers
 
--(void)onBecameActive {
+- (void)onBecameActive {
     //If our ad has expired, request a new interstitial
     if (!self.ad) {
         [self requestInterstitial];
     }
 }
+
 @end

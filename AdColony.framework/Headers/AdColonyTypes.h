@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /**
  Enum representing AdColony ad request error codes
@@ -39,10 +40,10 @@ typedef NS_ENUM(NSInteger, AdColonyOrientation) {
     AdColonyOrientationPortrait = 0,
 
     /** Landscape left and landscape right */
-    AdColonyOrientationLandscape,
+    AdColonyOrientationLandscape = 1,
 
     /** All orientations supported */
-    AdColonyOrientationAll
+    AdColonyOrientationAll = 2
 };
 
 /**
@@ -56,3 +57,12 @@ typedef NS_ENUM(NSUInteger, AdColonyZoneType) {
     /** Native zone type */
     AdColonyZoneTypeNative
 };
+
+
+
+struct ADCDim {
+    CGFloat size;
+    CGFloat position;
+};
+
+typedef struct ADCDim ADCDim;

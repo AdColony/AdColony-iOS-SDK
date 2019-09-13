@@ -4,6 +4,8 @@
 #import "AdColonyEventTracker.h"
 #import "AdColonyInterstitial.h"
 #import "AdColonyNativeAdView.h"
+#import "AdColonyAdView.h"
+#import "AdColonyAdSize.h"
 #import "AdColonyUserMetadata.h"
 #import "AdColonyZone.h"
 #import <Foundation/Foundation.h>
@@ -49,7 +51,38 @@ NS_ASSUME_NONNULL_BEGIN
  @see AdColonyInterstitial
  @see AdColonyAdRequestError
  */
-+ (void)requestInterstitialInZone:(NSString *)zoneID options:(nullable AdColonyAdOptions *)options success:(void (^)(AdColonyInterstitial *ad))success failure:(nullable void (^)(AdColonyAdRequestError *error))failure;
++ (void)requestInterstitialInZone:(NSString *)zoneID options:(nullable AdColonyAdOptions *)options success:(void (^)(AdColonyInterstitial *ad))success failure:(nullable void (^)(AdColonyAdRequestError *error))failure __attribute__((deprecated("Deprecated in v4.0.0, use delgate object instead of callback blocks.")));
+
+/**
+ @abstract Requests an AdColonyInterstitial.
+ @discussion This method returns immediately, before the ad request completes.
+ If the request is successful, an AdColonyInterstitial object will be passed to the success block.
+ If the request is unsuccessful, the failure block will be called and an AdColonyAdRequestError will be passed to the handler.
+ @param zoneID The AdColony zone identifier string indicating which zone the ad request is for.
+ @param options An AdColonyAdOptions object used to set configurable aspects of the ad request.
+ @param delegate Interstitial delegate object
+ @see AdColonyAdOptions
+ @see AdColonyInterstitial
+ @see AdColonyInterstitialDelegate
+ @see AdColonyAdRequestError
+ */
++ (void)requestInterstitialInZone:(NSString *)zoneID options:(nullable AdColonyAdOptions *)options andDelegate:(id<AdColonyInterstitialDelegate> _Nonnull)delegate;
+
+/**
+ @abstract Request an AdColonyAdView.
+ @discussion This method returns immediately, before the ad request completes.
+ If the request is successful, an AdColonyAdView object will be passed to the success block.
+ If the request is unsuccessful, an AdColonyAdRequestError object will be passed to the failure block.
+ @param zoneID The AdColony zone identifier string indicating which zone the ad request is for.
+ @param size The desired size of the banner ad view.
+ @param viewController Host view controller
+ @param delegate ad view delegate
+ @see AdColonyAdOptions
+ @see AdColonyAdSize
+ @see AdColonyAdView
+ @see AdColonyAdRequestError
+ */
++ (void)requestAdViewInZone:(NSString *)zoneID withSize:(AdColonyAdSize)size viewController:(UIViewController *)viewController andDelegate:(id<AdColonyAdViewDelegate>)delegate;
 
 /**
  @abstract Requests an AdColonyNativeAdView.

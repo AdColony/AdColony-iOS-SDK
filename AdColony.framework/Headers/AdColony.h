@@ -18,3 +18,5 @@
 #import <AdColony/AdColonyTypes.h>
 #import <AdColony/AdColonyUserMetadata.h>
 #import <AdColony/AdColonyZone.h>
+#import <AdColony/AdColonyAdView.h>
+#import <AdColony/AdColonyAdSize.h>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		173359881B1CC2A90001CD3D /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173359871B1CC2A90001CD3D /* AdColony.framework */; };
+		4DA7E81D232B120500D1D20A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA7E81C232B120500D1D20A /* SafariServices.framework */; };
 		9F0453681B16358B0016DE3B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0453671B16358B0016DE3B /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9F34E6DE1CECDAB5002AD562 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F34E6DD1CECDAB5002AD562 /* JavaScriptCore.framework */; };
 		9F6CEBAE1BB0BC7D00AB531B /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CEBAD1BB0BC7D00AB531B /* libz.1.2.5.tbd */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		173359871B1CC2A90001CD3D /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
+		4DA7E81C232B120500D1D20A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9F0453671B16358B0016DE3B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9F34E6DD1CECDAB5002AD562 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		9F6CEBAD1BB0BC7D00AB531B /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -78,6 +80,7 @@
 				9F0453681B16358B0016DE3B /* StoreKit.framework in Frameworks */,
 				9FC459E71A65E6FF00B07E6F /* SystemConfiguration.framework in Frameworks */,
 				B72499871FF4551600432118 /* WatchConnectivity.framework in Frameworks */,
+				4DA7E81D232B120500D1D20A /* SafariServices.framework in Frameworks */,
 				9FC459E81A65E6FF00B07E6F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +153,7 @@
 		B72499851FF4551600432118 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7E81C232B120500D1D20A /* SafariServices.framework */,
 				B724998A1FF4552600432118 /* MobileCoreServices.framework */,
 				B72499881FF4551F00432118 /* CoreMedia.framework */,
 				B72499861FF4551600432118 /* WatchConnectivity.framework */,

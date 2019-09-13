@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17E727D01B1CDA9300143D53 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E727CF1B1CDA9300143D53 /* AdColony.framework */; };
+		4DA7E81F232B2CA300D1D20A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA7E81E232B2CA300D1D20A /* SafariServices.framework */; };
 		9F34E6E01CECEB91002AD562 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F34E6DF1CECEB91002AD562 /* JavaScriptCore.framework */; };
 		9F3D687A1B95079C008BD46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3D68781B95079C008BD46B /* LaunchScreen.storyboard */; };
 		9F53E5151A66FA6000783C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F53E5141A66FA6000783C3A /* main.m */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		17E727CF1B1CDA9300143D53 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
+		4DA7E81E232B2CA300D1D20A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9F34E6DF1CECEB91002AD562 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		9F3D68791B95079C008BD46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdColonyV4VC/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F53E50F1A66FA6000783C3A /* AdColonyV4VC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdColonyV4VC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 				9F53E5581A66FACC00783C3A /* StoreKit.framework in Frameworks */,
 				9F53E5591A66FACC00783C3A /* SystemConfiguration.framework in Frameworks */,
 				B724998E1FF4555600432118 /* WatchConnectivity.framework in Frameworks */,
+				4DA7E81F232B2CA300D1D20A /* SafariServices.framework in Frameworks */,
 				9F53E55A1A66FACC00783C3A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +153,7 @@
 		B724998C1FF4555500432118 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7E81E232B2CA300D1D20A /* SafariServices.framework */,
 				B72499911FF4556C00432118 /* MobileCoreServices.framework */,
 				B724998F1FF4556300432118 /* CoreMedia.framework */,
 				B724998D1FF4555600432118 /* WatchConnectivity.framework */,
