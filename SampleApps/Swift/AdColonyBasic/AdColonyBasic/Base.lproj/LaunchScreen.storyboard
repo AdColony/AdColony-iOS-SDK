@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,10 +25,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jra-9v-EAj" secondAttribute="bottom" id="4vD-En-TVh"/>
                             <constraint firstAttribute="trailing" secondItem="jra-9v-EAj" secondAttribute="trailing" id="LDe-Ge-I55"/>
-                            <constraint firstItem="jra-9v-EAj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="btN-mc-6H6"/>
-                            <constraint firstItem="jra-9v-EAj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lec-3A-Izt"/>
+                            <constraint firstAttribute="bottom" secondItem="jra-9v-EAj" secondAttribute="bottom" id="mUD-40-V2d"/>
                             <constraint firstItem="jra-9v-EAj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="se8-lz-PHv"/>
                             <constraint firstItem="jra-9v-EAj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="tW9-lB-SFC"/>
                         </constraints>

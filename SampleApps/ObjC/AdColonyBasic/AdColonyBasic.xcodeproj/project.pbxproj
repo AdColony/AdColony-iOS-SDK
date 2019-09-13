@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		173359881B1CC2A90001CD3D /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173359871B1CC2A90001CD3D /* AdColony.framework */; };
 		4DA7E81D232B120500D1D20A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA7E81C232B120500D1D20A /* SafariServices.framework */; };
+		4DA7E822232B51DD00D1D20A /* BannersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7E821232B51DD00D1D20A /* BannersViewController.m */; };
 		9F0453681B16358B0016DE3B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0453671B16358B0016DE3B /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9F34E6DE1CECDAB5002AD562 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F34E6DD1CECDAB5002AD562 /* JavaScriptCore.framework */; };
 		9F6CEBAE1BB0BC7D00AB531B /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CEBAD1BB0BC7D00AB531B /* libz.1.2.5.tbd */; };
@@ -34,6 +35,9 @@
 /* Begin PBXFileReference section */
 		173359871B1CC2A90001CD3D /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
 		4DA7E81C232B120500D1D20A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		4DA7E820232B51DD00D1D20A /* BannersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannersViewController.h; sourceTree = "<group>"; };
+		4DA7E821232B51DD00D1D20A /* BannersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannersViewController.m; sourceTree = "<group>"; };
+		4DA7E823232B6BA000D1D20A /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		9F0453671B16358B0016DE3B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9F34E6DD1CECDAB5002AD562 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		9F6CEBAD1BB0BC7D00AB531B /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -108,10 +112,13 @@
 		9FC4599D1A65E61400B07E6F /* AdColonyBasic */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7E823232B6BA000D1D20A /* Settings.h */,
 				9FC459A21A65E61400B07E6F /* AppDelegate.h */,
 				9FC459A31A65E61400B07E6F /* AppDelegate.m */,
 				9FC459A51A65E61400B07E6F /* ViewController.h */,
 				9FC459A61A65E61400B07E6F /* ViewController.m */,
+				4DA7E820232B51DD00D1D20A /* BannersViewController.h */,
+				4DA7E821232B51DD00D1D20A /* BannersViewController.m */,
 				9FC459A81A65E61400B07E6F /* Main.storyboard */,
 				9FEE55DB1B95073400F23874 /* LaunchScreen.storyboard */,
 				9FC459AB1A65E61400B07E6F /* Images.xcassets */,
@@ -238,6 +245,7 @@
 			files = (
 				9FC459A71A65E61400B07E6F /* ViewController.m in Sources */,
 				9FC459A41A65E61400B07E6F /* AppDelegate.m in Sources */,
+				4DA7E822232B51DD00D1D20A /* BannersViewController.m in Sources */,
 				9FC459A11A65E61400B07E6F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

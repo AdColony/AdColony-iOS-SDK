@@ -6,13 +6,10 @@
 //
 
 #import "ViewController.h"
+#import "Settings.h"
 
 #import <AdColony/AdColony.h>
 
-#pragma mark - Constants
-
-#define kAdColonyAppID @"appbdee68ae27024084bb334a"
-#define kAdColonyZoneID @"vzf8fb4670a60e4a139d01b5"
 
 #pragma mark - ViewController Interface
 
@@ -24,6 +21,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *launchButton;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *spinner;
 @property (nonatomic, weak) IBOutlet UILabel *loadingLabel;
+@property (nonatomic, weak) IBOutlet UIButton *bannersButton;
 
 @end
 
@@ -35,8 +33,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.bannersButton.alpha = 0.0;
+    self.bannersButton.hidden = YES;
+    
     //Configure AdColony as soon as the app starts
-    [AdColony configureWithAppID:kAdColonyAppID zoneIDs:@[kAdColonyZoneID] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
+    [AdColony configureWithAppID:kAdColonyAppID zoneIDs:@[kAdColonyInterstitialZoneID, kAdColonyBannerZoneID] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
+        self.bannersButton.hidden = NO;
+        [UIView animateWithDuration:1.0 animations:^{
+            self.bannersButton.alpha = 1.0;
+        }];
         
         //AdColony has finished configuring, so let's request an interstitial ad
         [self requestInterstitial];
@@ -65,7 +70,7 @@
 
 - (void)requestInterstitial {
     //Request an interstitial ad from AdColony
-    [AdColony requestInterstitialInZone:kAdColonyZoneID options:nil andDelegate:self];
+    [AdColony requestInterstitialInZone:kAdColonyInterstitialZoneID options:nil andDelegate:self];
 }
 
 - (IBAction)launchInterstitial:(id)sender {
@@ -91,7 +96,7 @@
 }
 
 - (void)adColonyInterstitialDidFailToLoad:(AdColonyAdRequestError *)error {
-    NSLog(@"SAMPLE_APP: Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
+    NSLog(@"SAMPLE_APP: Interstitial request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
 }
 
 - (void)adColonyInterstitialDidClose:(AdColonyInterstitial *)interstitial {

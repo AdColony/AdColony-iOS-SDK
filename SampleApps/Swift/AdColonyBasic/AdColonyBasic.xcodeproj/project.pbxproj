@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		17E727D21B1CDD4400143D53 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E727D11B1CDD4400143D53 /* AdColony.framework */; };
+		4DA7E827232B741900D1D20A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7E826232B741900D1D20A /* Constants.swift */; };
+		4DA7E829232B77F300D1D20A /* BannersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7E828232B77F300D1D20A /* BannersViewController.swift */; };
 		581A657A1D46D98F0056EA3D /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 581A65791D46D98F0056EA3D /* libz.1.2.5.tbd */; };
 		9F874CA61B95095000B9F8D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F874CA41B95095000B9F8D5 /* LaunchScreen.storyboard */; };
 		9FE091261A65B4CB001AA326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE091251A65B4CB001AA326 /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		17E727D11B1CDD4400143D53 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
+		4DA7E826232B741900D1D20A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4DA7E828232B77F300D1D20A /* BannersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersViewController.swift; sourceTree = "<group>"; };
 		581A65791D46D98F0056EA3D /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		9F874CA51B95095000B9F8D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdColonyBasic/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE091201A65B4CB001AA326 /* AdColonyBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdColonyBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,8 +110,10 @@
 		9FE091221A65B4CB001AA326 /* AdColonyBasic */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7E826232B741900D1D20A /* Constants.swift */,
 				9FE091251A65B4CB001AA326 /* AppDelegate.swift */,
 				9FE091271A65B4CB001AA326 /* ViewController.swift */,
+				4DA7E828232B77F300D1D20A /* BannersViewController.swift */,
 				9FE091291A65B4CB001AA326 /* Main.storyboard */,
 				9F874CA41B95095000B9F8D5 /* LaunchScreen.storyboard */,
 				9FE0912C1A65B4CB001AA326 /* Images.xcassets */,
@@ -242,6 +248,8 @@
 			files = (
 				9FE091281A65B4CB001AA326 /* ViewController.swift in Sources */,
 				9FE091261A65B4CB001AA326 /* AppDelegate.swift in Sources */,
+				4DA7E829232B77F300D1D20A /* BannersViewController.swift in Sources */,
+				4DA7E827232B741900D1D20A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

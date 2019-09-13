@@ -7,18 +7,19 @@
 
 import UIKit
 
-struct Constants
-{
+struct Constants {
+    
     static let adColonyAppID = "appbdee68ae27024084bb334a"
     static let adColonyZoneID = "vzf8e4e97704c4445c87504e"
     
     static let currencyBalance = "CurrencyBalance"
     static let currencyBalanceChange = "CurrencyBalanceChange"
+    
 }
 
 
-class ViewController: UIViewController
-{
+class ViewController: UIViewController, AdColonyInterstitialDelegate {
+    
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var currencyLabel: UILabel!
@@ -27,61 +28,56 @@ class ViewController: UIViewController
     
     var ad: AdColonyInterstitial?
 
-    
     //=============================================
     // MARK:- UIViewController Overrides
     //=============================================
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         //Initialize AdColony on initial launch
-        AdColony.configure(withAppID: Constants.adColonyAppID, zoneIDs: [Constants.adColonyZoneID], options: nil,
-            completion: {(zones) in
-                
-                //Set the zone's reward handler
-                //This implementation is designed for client-side virtual currency without a server
-                //It uses NSUserDefaults for persistent client-side storage of the currency balance
-                //For applications with a server, contact the server to retrieve an updated currency balance
-                let zone = zones.first
-                zone?.setReward({(success, name, amount) in
-                    if (success) {
-                        
-                        //Get currency balance from persistent storage and update it
-                        let storage = UserDefaults.standard
-                        let wrappedBalance = storage.object(forKey: Constants.currencyBalance)
-                        var balance: Int = 0
-                        if let nonNilNumWrappedBalance = wrappedBalance as? NSNumber {
-                            balance = Int(nonNilNumWrappedBalance.uintValue)
-                        }
-                        balance += Int(amount)
-                            
-                        //Persist the currency balance
-                        let newBalance: NSNumber = NSNumber(integerLiteral: balance)
-                        storage.set(newBalance, forKey: Constants.currencyBalance)
-                        storage.synchronize()
-                            
-                        //Update the UI with the new balance
-                        self.updateCurrencyBalance()
+        AdColony.configure(withAppID: Constants.adColonyAppID, zoneIDs: [Constants.adColonyZoneID], options: nil) { (zones) in
+            //Set the zone's reward handler
+            //This implementation is designed for client-side virtual currency without a server
+            //It uses NSUserDefaults for persistent client-side storage of the currency balance
+            //For applications with a server, contact the server to retrieve an updated currency balance
+            let zone = zones.first
+            zone?.setReward({(success, name, amount) in
+                if (success) {
+                    
+                    //Get currency balance from persistent storage and update it
+                    let storage = UserDefaults.standard
+                    let wrappedBalance = storage.object(forKey: Constants.currencyBalance)
+                    var balance: Int = 0
+                    if let nonNilNumWrappedBalance = wrappedBalance as? NSNumber {
+                        balance = Int(nonNilNumWrappedBalance.uintValue)
                     }
-                })
-                
-                //If the application has been inactive for a while, our ad might have expired so let's add a check for a nil ad object
-                NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification,
-                                                       object: nil,
-                                                       queue: OperationQueue.main,
-                                                       using: { notification in
-                                                        //If our ad has expired, request a new interstitial
-                                                        if (self.ad == nil) {
-                                                            self.requestInterstitial()
-                                                        }
-                })
-                
-                //AdColony has finished configuring, so let's request an interstitial ad
-                self.requestInterstitial()
-            }
-        )
+                    balance += Int(amount)
+                        
+                    //Persist the currency balance
+                    let newBalance: NSNumber = NSNumber(integerLiteral: balance)
+                    storage.set(newBalance, forKey: Constants.currencyBalance)
+                    storage.synchronize()
+                        
+                    //Update the UI with the new balance
+                    self.updateCurrencyBalance()
+                }
+            })
+            
+            //If the application has been inactive for a while, our ad might have expired so let's add a check for a nil ad object
+            NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification,
+                                                   object: nil,
+                                                   queue: OperationQueue.main,
+                                                   using: { notification in
+                                                    //If our ad has expired, request a new interstitial
+                                                    if (self.ad == nil) {
+                                                        self.requestInterstitial()
+                                                    }
+            })
+            
+            //AdColony has finished configuring, so let's request an interstitial ad
+            self.requestInterstitial()
+        }
         
         if UIDevice.current.userInterfaceIdiom == .pad {
             self.spinner.style = UIActivityIndicatorView.Style.whiteLarge
@@ -93,70 +89,54 @@ class ViewController: UIViewController
         self.setLoadingState()
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle
-    {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask
-    {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.all
     }
     
-    override var shouldAutorotate: Bool
-    {
+    override var shouldAutorotate: Bool {
         return true
     }
-    
    
     //=============================================
     // MARK:- AdColony
     //=============================================
     
-    func requestInterstitial()
-    {
+    func requestInterstitial() {
+        self.setLoadingState()
+        
         //Request an interstitial ad from AdColony
-        AdColony.requestInterstitial(inZone: Constants.adColonyZoneID, options:nil,
-                                     
-            //Handler for successful ad requests
-            success:{(newAd) in
-            
-                //Once the ad has finished, set the loading state and request a new interstitial
-                newAd.setClose({
-                    self.ad = nil
-                    
-                    self.setLoadingState()
-                    self.requestInterstitial()
-                })
-
-                //Interstitials can expire, so we need to handle that event also
-                newAd.setExpire( {
-                    self.ad = nil
-                    
-                    self.setLoadingState()
-                    self.requestInterstitial()
-                })
-
-                //Store a reference to the returned interstitial object
-                self.ad = newAd
-                
-                //Show the user we are ready to play a video
-                self.setReadyState()
-            },
-            
-            //Handler for failed ad requests
-            failure:{(error) in
-                NSLog("SAMPLE_APP: Request failed with error: " + error.localizedDescription + " and suggestion: " + error.localizedRecoverySuggestion!)
-            }
-        )
+        AdColony.requestInterstitial(inZone: Constants.adColonyZoneID, options: nil, andDelegate: self)
     }
     
-    @IBAction func triggerVideo(_ sender: AnyObject)
-    {
-        if let ad = self.ad {
-            if (!ad.expired) {
-                ad.show(withPresenting: self)
-            }
+    func adColonyInterstitialDidLoad(_ interstitial: AdColonyInterstitial) {
+        //Store a reference to the returned interstitial object
+        self.ad = interstitial
+        
+        //Show the user we are ready to play a video
+        self.setReadyState()
+    }
+    
+    func adColonyInterstitialDidFail(toLoad error: AdColonyAdRequestError) {
+        print("SAMPLE_APP: Request failed with error: \(error.localizedDescription) and suggestion: \(error.localizedRecoverySuggestion!)")
+    }
+    
+    func adColonyInterstitialExpired(_ interstitial: AdColonyInterstitial) {
+        self.ad = nil
+        self.requestInterstitial()
+    }
+    
+    func adColonyInterstitialDidClose(_ interstitial: AdColonyInterstitial) {
+        self.ad = nil
+        self.requestInterstitial()
+    }
+    
+    @IBAction func triggerVideo(_ sender: AnyObject) {
+        if let ad = self.ad, !ad.expired {
+            ad.show(withPresenting: self)
         }
     }
     
@@ -165,8 +145,7 @@ class ViewController: UIViewController
     // MARK:- UI
     //=============================================
     
-    func setLoadingState()
-    {
+    func setLoadingState() {
         self.spinner.isHidden = false
         self.spinner.startAnimating()
         self.button.alpha = 0.0
@@ -176,8 +155,7 @@ class ViewController: UIViewController
         }
     }
     
-    func setReadyState()
-    {
+    func setReadyState() {
         self.spinner.stopAnimating()
         self.spinner.isHidden = true
         self.statusLabel.alpha = 0.0
@@ -187,8 +165,7 @@ class ViewController: UIViewController
         }
     }
     
-    func updateCurrencyBalance()
-    {
+    func updateCurrencyBalance() {
         //Get currency balance from persistent storage and display it
         let storage = UserDefaults.standard
         let wrappedBalance = storage.object(forKey: Constants.currencyBalance)
@@ -199,4 +176,5 @@ class ViewController: UIViewController
         
         self.currencyLabel.text = String(format: "%d", balance)
     }
+    
 }
