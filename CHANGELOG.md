@@ -1,5 +1,5 @@
 # Change Log
-## 4.0.0 (2019/09/18)
+## 4.1.0 (2019/09/23)
 * Integration with OM SDK
 * Added support for banners
 * Removed UIWebView references

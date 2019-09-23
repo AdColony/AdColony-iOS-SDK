@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: September 18th, 2019
-* SDK Version: 4.0.0
+* Modified: September 23rd, 2019
+* SDK Version: 4.1.0
 
 ## Overview
 
@@ -18,7 +18,7 @@ playable ads.
 
 ## Release Notes
 
-### 4.0.0
+### 4.1.0
 
 * Integration with OM SDK
 * Added support for banners
@@ -26,14 +26,14 @@ playable ads.
 * Bugfixes and stability improvements
 
 Here is the link to the
-[release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md)
+[release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
 for all the previous SDK versions and please check out the 3.3 SDK
 [integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
 
 ## Getting Started
 
 To get started, here is the link to
-[iOS SDK integration documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
+[iOS SDK integration documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki).
 
 **Note:**
 
@@ -49,11 +49,11 @@ Please note that updating from our 2.x SDK is not a drag and drop
 update, but rather includes breaking API and process changes. In order
 to take advantage of the 3.x SDK, a complete re-integration is
 necessary. Please review our
-[documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki)
+[documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki)
 to get a better idea on what changes will be necessary in your app.
 
 For detailed information about the AdColony SDK, see our
-[iOS SDK documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
+[iOS SDK documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki).
 
 #### SDK 3.X
 
@@ -63,7 +63,7 @@ Just drag and drop the framework into your Xcode project. If you are
 using Cocoapods, sync with the latest by running `pod update`.
 
 For detailed information about the AdColony SDK, see our
-[iOS SDK documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
+[iOS SDK documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki).
 
 
 
