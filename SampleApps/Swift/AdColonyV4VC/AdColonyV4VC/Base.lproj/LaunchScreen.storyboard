@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,11 +25,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rG4-Az-ugB" secondAttribute="bottom" id="5QU-YR-ktC"/>
                             <constraint firstItem="rG4-Az-ugB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JhF-fP-3gK"/>
-                            <constraint firstItem="rG4-Az-ugB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SAV-ZA-JZx"/>
                             <constraint firstItem="rG4-Az-ugB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="dwI-nQ-p8V"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="rG4-Az-ugB" secondAttribute="bottom" id="gzw-ih-frS"/>
-                            <constraint firstItem="rG4-Az-ugB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mXS-Zh-hfA"/>
                             <constraint firstAttribute="trailing" secondItem="rG4-Az-ugB" secondAttribute="trailing" id="moJ-JO-zia"/>
                         </constraints>
                     </view>

@@ -19,15 +19,16 @@
 
 #pragma mark - ViewController Interface
 
-@interface ViewController ()
-{
-    AdColonyInterstitial *_ad;
-}
-@property (weak, nonatomic) IBOutlet UIImageView *background;
-@property (weak, nonatomic) IBOutlet UIButton *button;
-@property (weak, nonatomic) IBOutlet UILabel *currencyLabel;
-@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+@interface ViewController () <AdColonyInterstitialDelegate>
+
+@property (nonatomic, weak) AdColonyInterstitial *ad;
+
+@property (nonatomic, weak) IBOutlet UIImageView *background;
+@property (nonatomic, weak) IBOutlet UIButton *button;
+@property (nonatomic, weak) IBOutlet UILabel *currencyLabel;
+@property (nonatomic, weak) IBOutlet UILabel *statusLabel;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *spinner;
+
 @end
 
 
@@ -38,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    __weak typeof(self) weakSelf = self;
+    
     //Initialize AdColony on initial launch
     [AdColony configureWithAppID:kAdColonyAppID zoneIDs:@[kAdColonyZoneID] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
         
@@ -47,6 +50,7 @@
         //For applications with a server, contact the server to retrieve an updated currency balance
         AdColonyZone *zone = [zones firstObject];
         zone.reward = ^(BOOL success, NSString *name, int amount) {
+            __strong typeof(weakSelf) self = weakSelf;
             
             //Store the new balance and update the UI to reflect the change
             if (success) {
@@ -74,9 +78,9 @@
     }];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        [_spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        [self.spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
     } else {
-        [_spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
+        [self.spinner setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
     }
     
     [self updateCurrencyBalance];
@@ -99,77 +103,70 @@
 
 - (void)requestInterstitial {
     //Request an interstitial ad from AdColony
-    [AdColony requestInterstitialInZone:kAdColonyZoneID options:nil
-     
-        //Handler for successful ad requests
-        success:^(AdColonyInterstitial* ad) {
-            
-            //Once the ad has finished, set the loading state and request a new interstitial
-            ad.close = ^{
-                _ad = nil;
-                
-                [self setLoadingState];
-                [self requestInterstitial];
-            };
-                                    
-            //Interstitials can expire, so we need to handle that event also
-            ad.expire = ^{
-                _ad = nil;
-                
-                [self setLoadingState];
-                [self requestInterstitial];
-            };
-                                    
-            //Store a reference to the returned interstitial object
-            _ad = ad;
-                                    
-            //Show the user we are ready to play a video
-            [self setReadyState];
-        }
-     
-        //Handler for failed ad requests
-        failure:^(AdColonyAdRequestError* error) {
-            NSLog(@"SAMPLE_APP: Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
-        }
-     ];
+    [AdColony requestInterstitialInZone:kAdColonyZoneID options:nil andDelegate:self];
+}
+
+- (void)adColonyInterstitialDidLoad:(AdColonyInterstitial *)interstitial {
+    //Store a reference to the returned interstitial object
+    self.ad = interstitial;
+                            
+    //Show the user we are ready to play a video
+    [self setReadyState];
+}
+
+- (void)adColonyInterstitialExpired:(AdColonyInterstitial *)interstitial {
+    self.ad = nil;
+    [self setLoadingState];
+    [self requestInterstitial];
+}
+
+- (void)adColonyInterstitialDidFailToLoad:(AdColonyAdRequestError *)error {
+    NSLog(@"SAMPLE_APP: Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
+}
+
+- (void)adColonyInterstitialDidClose:(AdColonyInterstitial *)interstitial {
+    self.ad = nil;
+    [self setLoadingState];
+    [self requestInterstitial];
 }
 
 - (IBAction)triggerVideo {
     //Display our ad to the user
-    if (!_ad.expired) {
-        [_ad showWithPresentingViewController:self];
+    if (!self.ad.expired) {
+        [self.ad showWithPresentingViewController:self];
     }
 }
 
 #pragma mark - UI
 
 - (void)setLoadingState {
-    [_spinner setHidden:NO];
-    [_spinner startAnimating];
-    [_button setAlpha:0.];
-    [UIView animateWithDuration:.5 animations:^{ _statusLabel.alpha = 1.; } completion:nil];
+    [self.spinner setHidden:NO];
+    [self.spinner startAnimating];
+    [self.button setAlpha:0.];
+    [UIView animateWithDuration:.5 animations:^{ self.statusLabel.alpha = 1.; } completion:nil];
 }
 
 - (void)setReadyState {
-    [_spinner stopAnimating];
-    [_spinner setHidden:YES];
-    [_statusLabel setAlpha:0.];
-    [UIView animateWithDuration:1.0 animations:^{ _button.alpha = 1.; } completion:nil];
+    [self.spinner stopAnimating];
+    [self.spinner setHidden:YES];
+    [self.statusLabel setAlpha:0.];
+    [UIView animateWithDuration:1.0 animations:^{ self.button.alpha = 1.; } completion:nil];
 }
 
 - (void)updateCurrencyBalance {
     //Get currency balance from persistent storage and display it
     NSNumber* wrappedBalance = [[NSUserDefaults standardUserDefaults] objectForKey:kCurrencyBalance];
     NSUInteger balance = wrappedBalance && [wrappedBalance isKindOfClass:[NSNumber class]] ? [wrappedBalance unsignedIntValue] : 0;
-    [_currencyLabel setText:[NSString stringWithFormat:@"%lu", (unsigned long)balance]];
+    [self.currencyLabel setText:[NSString stringWithFormat:@"%lu", (unsigned long)balance]];
 }
 
 #pragma mark - Event Handlers
 
--(void)onBecameActive {
+- (void)onBecameActive {
     //If our ad has expired, request a new interstitial
-    if (!_ad) {
+    if (!self.ad) {
         [self requestInterstitial];
     }
 }
+
 @end

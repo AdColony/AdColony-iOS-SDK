@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: June 11th, 2019
-* SDK Version: 3.3.8.1
+* Modified: September 23rd, 2019
+* SDK Version: 4.1.0
 
 ## Overview
 
@@ -18,23 +18,26 @@ playable ads.
 
 ## Release Notes
 
-### 3.3.8.1
+### 4.1.0
 
-* Fixed the bug where click action was not working for some of the ad types.
+* Integration with OM SDK
+* Added support for banners
+* Removed UIWebView references
+* Bugfixes and stability improvements
 
 Here is the link to the
-[release notes](https://github.com/AdColony/AdColony-iOS-SDK-3/blob/master/CHANGELOG.md)
+[release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
 for all the previous SDK versions and please check out the 3.3 SDK
 [integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
 
 ## Getting Started
 
 To get started, here is the link to
-[iOS SDK integration documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
+[iOS SDK integration documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki).
 
 **Note:**
 
-* Tested and verified on iOS 12
+* Tested and verified on iOS 13
 * Works on iOS 8 and above.
 * Not backwards compatible with any AdColony 2.0 integrations due to major API changes.
 
@@ -46,17 +49,22 @@ Please note that updating from our 2.x SDK is not a drag and drop
 update, but rather includes breaking API and process changes. In order
 to take advantage of the 3.x SDK, a complete re-integration is
 necessary. Please review our
-[documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki)
+[documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki)
 to get a better idea on what changes will be necessary in your app.
 
 For detailed information about the AdColony SDK, see our
-[iOS SDK documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
+[iOS SDK documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki).
 
 #### SDK 3.X
 
-Updating from our previous SDK 3.x versions requires no code changes,
-just drag and drop the framework into your Xcode project. If you are
+Updating from 3.x SDK is still drag and drop update although you'll see deprecation warnings on interstitial API.
+3.x interstitial API is still fully functional and will remain fully functional at least until iOS 14 release.
+Just drag and drop the framework into your Xcode project. If you are
 using Cocoapods, sync with the latest by running `pod update`.
+
+For detailed information about the AdColony SDK, see our
+[iOS SDK documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki).
+
 
 
 ## Legal Requirements

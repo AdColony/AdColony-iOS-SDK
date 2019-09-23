@@ -6,23 +6,23 @@
 //
 
 #import "ViewController.h"
+#import "Settings.h"
 
 #import <AdColony/AdColony.h>
 
-#pragma mark - Constants
-
-#define kAdColonyAppID @"appbdee68ae27024084bb334a"
-#define kAdColonyZoneID @"vzf8fb4670a60e4a139d01b5"
 
 #pragma mark - ViewController Interface
 
-@interface ViewController ()
-{
-    AdColonyInterstitial *_ad;
-}
-@property (weak, nonatomic) IBOutlet UIButton *launchButton;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
-@property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
+@interface ViewController () <AdColonyInterstitialDelegate>
+
+@property (nonatomic, weak) AdColonyInterstitial *ad;
+
+@property (nonatomic, weak) IBOutlet UIImageView *background;
+@property (nonatomic, weak) IBOutlet UIButton *launchButton;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *spinner;
+@property (nonatomic, weak) IBOutlet UILabel *loadingLabel;
+@property (nonatomic, weak) IBOutlet UIButton *bannersButton;
+
 @end
 
 
@@ -33,8 +33,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.bannersButton.alpha = 0.0;
+    self.bannersButton.hidden = YES;
+    
     //Configure AdColony as soon as the app starts
-    [AdColony configureWithAppID:kAdColonyAppID zoneIDs:@[kAdColonyZoneID] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
+    [AdColony configureWithAppID:kAdColonyAppID zoneIDs:@[kAdColonyInterstitialZoneID, kAdColonyBannerZoneID] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
+        self.bannersButton.hidden = NO;
+        [UIView animateWithDuration:1.0 animations:^{
+            self.bannersButton.alpha = 1.0;
+        }];
         
         //AdColony has finished configuring, so let's request an interstitial ad
         [self requestInterstitial];
@@ -63,70 +70,63 @@
 
 - (void)requestInterstitial {
     //Request an interstitial ad from AdColony
-    [AdColony requestInterstitialInZone:kAdColonyZoneID options:nil
-     
-        //Handler for successful ad requests
-        success:^(AdColonyInterstitial *ad) {
-            
-            //Once the ad has finished, set the loading state and request a new interstitial
-            ad.close = ^{
-                _ad = nil;
-                
-                [self setLoadingState];
-                [self requestInterstitial];
-            };
-            
-            //Interstitials can expire, so we need to handle that event also
-            ad.expire = ^{
-                _ad = nil;
-                
-                [self setLoadingState];
-                [self requestInterstitial];
-            };
-            
-            //Store a reference to the returned interstitial object
-            _ad = ad;
-            
-            //Show the user we are ready to play a video
-            [self setReadyState];
-        }
-     
-        //Handler for failed ad requests
-        failure:^(AdColonyAdRequestError *error) {
-            NSLog(@"SAMPLE_APP: Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
-        }
-     ];
+    [AdColony requestInterstitialInZone:kAdColonyInterstitialZoneID options:nil andDelegate:self];
 }
 
 - (IBAction)launchInterstitial:(id)sender {
     //Display our ad to the user
-    if (!_ad.expired) {
-        [_ad showWithPresentingViewController:self];
+    if (!self.ad.expired) {
+        [self.ad showWithPresentingViewController:self];
     }
+}
+
+- (void)adColonyInterstitialDidLoad:(AdColonyInterstitial *)interstitial {
+    //Store a reference to the returned interstitial object
+    self.ad = interstitial;
+    
+    //Show the user we are ready to play a video
+    [self setReadyState];
+}
+
+- (void)adColonyInterstitialExpired:(AdColonyInterstitial *)interstitial  {
+    self.ad = nil;
+    
+    [self setLoadingState];
+    [self requestInterstitial];
+}
+
+- (void)adColonyInterstitialDidFailToLoad:(AdColonyAdRequestError *)error {
+    NSLog(@"SAMPLE_APP: Interstitial request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
+}
+
+- (void)adColonyInterstitialDidClose:(AdColonyInterstitial *)interstitial {
+    [self setLoadingState];
+    [self requestInterstitial];
 }
 
 #pragma mark - UI
 
 - (void)setLoadingState {
-    _launchButton.hidden = YES;
-    _launchButton.alpha = 0.0;
-    _loadingLabel.hidden = NO;
-    [_spinner startAnimating];
+    self.launchButton.hidden = YES;
+    self.launchButton.alpha = 0.0;
+    self.loadingLabel.hidden = NO;
+    [self.spinner startAnimating];
 }
 
--(void)setReadyState {
-    _loadingLabel.hidden = YES;
-    _launchButton.hidden = NO;
-    [_spinner stopAnimating];
-    [UIView animateWithDuration:1.0 animations:^{ _launchButton.alpha = 1.; } completion:nil];
+- (void)setReadyState {
+    self.loadingLabel.hidden = YES;
+    self.launchButton.hidden = NO;
+    [self.spinner stopAnimating];
+    [UIView animateWithDuration:1.0 animations:^{ self.launchButton.alpha = 1.; } completion:nil];
 }
 
 #pragma mark - Event Handlers
 
--(void)onBecameActive {
+- (void)onBecameActive {
     //If our ad has expired, request a new interstitial
-    if (!_ad) {
+    if (!self.ad) {
         [self requestInterstitial];
     }
 }
+
 @end

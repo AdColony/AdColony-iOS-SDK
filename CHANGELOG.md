@@ -1,4 +1,10 @@
 # Change Log
+## 4.1.0 (2019/09/23)
+* Integration with OM SDK
+* Added support for banners
+* Removed UIWebView references
+* Bugfixes and stability improvements
+
 ## 3.3.8.1 (2019/06/11)
 * Fixed a bug where click action for some of the ads was not working.
 
