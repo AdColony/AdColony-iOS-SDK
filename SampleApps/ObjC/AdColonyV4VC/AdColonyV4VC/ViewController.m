@@ -39,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    __weak typeof(self) weakSelf = self;
+    
     //Initialize AdColony on initial launch
     [AdColony configureWithAppID:kAdColonyAppID zoneIDs:@[kAdColonyZoneID] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
         
@@ -48,6 +50,7 @@
         //For applications with a server, contact the server to retrieve an updated currency balance
         AdColonyZone *zone = [zones firstObject];
         zone.reward = ^(BOOL success, NSString *name, int amount) {
+            __strong typeof(weakSelf) self = weakSelf;
             
             //Store the new balance and update the UI to reflect the change
             if (success) {
