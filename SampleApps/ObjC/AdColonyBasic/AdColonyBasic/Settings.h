@@ -14,7 +14,7 @@
 
 #define kAdColonyAppID @"appbdee68ae27024084bb334a"
 #define kAdColonyInterstitialZoneID @"vzf8fb4670a60e4a139d01b5"
-#define kAdColonyBannerZoneID @"vzf8fb4670a60e4a139d01b5"
+#define kAdColonyBannerZoneID @"vz77f5db656e2840c4ab"
 
 
 

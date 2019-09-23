@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/AdColonyAppOptions.h</key>
 		<data>
-		KIA+TULFmgGgwq3opa01ZafUVeA=
+		zNt7qXPZdqHLSh9mlqTewdRkYTQ=
 		</data>
 		<key>Headers/AdColonyEventTracker.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rFKw8wXbIlmBf8oWXiFpMCoKbVc=
+		7tQqzcAqwrsEMLJ0js/Bbqlp7dI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -149,11 +149,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KIA+TULFmgGgwq3opa01ZafUVeA=
+			zNt7qXPZdqHLSh9mlqTewdRkYTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			eOjeEhaYBWa/Zti1tLNzNZD10wXwrpkFHstcGtSF8DI=
+			g51TNyC005Med66Kow4o+i8za8yHHMV1nzY9Q3ZIyOc=
 			</data>
 		</dict>
 		<key>Headers/AdColonyEventTracker.h</key>
