@@ -78,7 +78,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param viewController Host view controller
  @param delegate ad view delegate
  @see AdColonyAdOptions
- @see AdColonyAdSize
  @see AdColonyAdView
  @see AdColonyAdRequestError
  */

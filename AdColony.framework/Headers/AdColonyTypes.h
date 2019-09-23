@@ -1,3 +1,4 @@
+#import "AdColonyAdSize.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -58,11 +59,3 @@ typedef NS_ENUM(NSUInteger, AdColonyZoneType) {
     AdColonyZoneTypeNative
 };
 
-
-
-struct ADCDim {
-    CGFloat size;
-    CGFloat position;
-};
-
-typedef struct ADCDim ADCDim;

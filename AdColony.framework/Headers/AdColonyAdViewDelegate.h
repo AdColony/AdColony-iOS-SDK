@@ -52,7 +52,8 @@
 
 /**
  @abstract Received a click notification
- @discussion Notifies you when 
+ @discussion Notifies you when adView receives a click
+ @param adView Ad view that received a click
  */
 - (void)adColonyAdViewDidReceiveClick:(AdColonyAdView * _Nonnull)adView;
 
