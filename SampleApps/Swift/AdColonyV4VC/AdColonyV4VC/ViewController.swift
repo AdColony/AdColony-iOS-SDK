@@ -36,13 +36,13 @@ class ViewController: UIViewController, AdColonyInterstitialDelegate {
         super.viewDidLoad()
         
         //Initialize AdColony on initial launch
-        AdColony.configure(withAppID: Constants.adColonyAppID, zoneIDs: [Constants.adColonyZoneID], options: nil) { (zones) in
+        AdColony.configure(withAppID: Constants.adColonyAppID, zoneIDs: [Constants.adColonyZoneID], options: nil) { [weak self] (zones) in
             //Set the zone's reward handler
             //This implementation is designed for client-side virtual currency without a server
             //It uses NSUserDefaults for persistent client-side storage of the currency balance
             //For applications with a server, contact the server to retrieve an updated currency balance
             let zone = zones.first
-            zone?.setReward({(success, name, amount) in
+            zone?.setReward({ [weak self] (success, name, amount) in
                 if (success) {
                     
                     //Get currency balance from persistent storage and update it
@@ -60,7 +60,7 @@ class ViewController: UIViewController, AdColonyInterstitialDelegate {
                     storage.synchronize()
                         
                     //Update the UI with the new balance
-                    self.updateCurrencyBalance()
+                    self?.updateCurrencyBalance()
                 }
             })
             
@@ -70,13 +70,13 @@ class ViewController: UIViewController, AdColonyInterstitialDelegate {
                                                    queue: OperationQueue.main,
                                                    using: { notification in
                                                     //If our ad has expired, request a new interstitial
-                                                    if (self.ad == nil) {
-                                                        self.requestInterstitial()
+                                                    if (self?.ad == nil) {
+                                                        self?.requestInterstitial()
                                                     }
             })
             
             //AdColony has finished configuring, so let's request an interstitial ad
-            self.requestInterstitial()
+            self?.requestInterstitial()
         }
         
         if UIDevice.current.userInterfaceIdiom == .pad {
