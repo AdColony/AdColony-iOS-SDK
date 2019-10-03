@@ -1,4 +1,7 @@
 # Change Log
+## 4.1.1 (2019/10/02)
+* Bugfixes
+
 ## 4.1.0 (2019/09/23)
 * Integration with OM SDK
 * Added support for banners

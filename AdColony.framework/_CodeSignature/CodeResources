@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AdColony.h</key>
 		<data>
-		7DAI3d5EUcuF512IMaaqheTOQcg=
+		DFRe4Sg3BJrxUrx50iwGZJx0Uus=
 		</data>
 		<key>Headers/AdColonyAdOptions.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/AdColonyAdViewDelegate.h</key>
 		<data>
-		doGEa1vm8+hobIxLfFq1xLpxow0=
+		MxJTDpv48kltPCJO1JfSSJMbenc=
 		</data>
 		<key>Headers/AdColonyAppOptions.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7tQqzcAqwrsEMLJ0js/Bbqlp7dI=
+		0P+O/doFv8sTI7/+wiUvSgHTyPQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7DAI3d5EUcuF512IMaaqheTOQcg=
+			DFRe4Sg3BJrxUrx50iwGZJx0Uus=
 			</data>
 			<key>hash2</key>
 			<data>
-			5DJ/0T8DOvysfAn28/4zZdNO9ulYnZdJWkaCQJGW+TM=
+			f0UDZJm51jf5cmnKU2HUsfWBL+tstjJs53P9T7bMyCQ=
 			</data>
 		</dict>
 		<key>Headers/AdColonyAdOptions.h</key>
@@ -138,11 +138,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			doGEa1vm8+hobIxLfFq1xLpxow0=
+			MxJTDpv48kltPCJO1JfSSJMbenc=
 			</data>
 			<key>hash2</key>
 			<data>
-			WFsVctsaZBmWA7OZR/E5hX+QOrb2TyvGXxn9Eq95ReM=
+			9HhugofD8MimsBp1YK+HXniczyeh1FnVhbu3PsdVBTA=
 			</data>
 		</dict>
 		<key>Headers/AdColonyAppOptions.h</key>

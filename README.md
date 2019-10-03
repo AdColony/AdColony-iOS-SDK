@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: September 23rd, 2019
-* SDK Version: 4.1.0
+* Modified: October 2nd, 2019
+* SDK Version: 4.1.1
 
 ## Overview
 
@@ -18,12 +18,9 @@ playable ads.
 
 ## Release Notes
 
-### 4.1.0
+### 4.1.1
 
-* Integration with OM SDK
-* Added support for banners
-* Removed UIWebView references
-* Bugfixes and stability improvements
+* Bugfixes
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
