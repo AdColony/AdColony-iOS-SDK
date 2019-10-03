@@ -40,7 +40,7 @@
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-    [self clearBanner:self.ad];
+    [self clearBanner];
 }
 
 #pragma mark - AdColony
@@ -50,17 +50,18 @@
     [AdColony requestAdViewInZone:kAdColonyBannerZoneID withSize:kAdColonyAdSizeBanner viewController:self andDelegate:self];
 }
 
-- (void)clearBanner:(AdColonyAdView *)adView {
-    [adView destroy];
+- (void)clearBanner {
+    if (self.ad) {
+        [self.ad destroy];
+        self.ad = nil;
+    }
 }
 
 - (void)adColonyAdViewDidLoad:(AdColonyAdView *)adView {
-    [self clearBanner:self.ad];
+    [self clearBanner];
     self.ad = adView;
-    CGFloat x = (self.bannerPlacement.frame.size.width - adView.frame.size.width) / 2.0;
-    CGFloat y = (self.bannerPlacement.frame.size.height - adView.frame.size.height) / 2.0;
-    adView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin;
-    adView.frame = CGRectMake(x, y, adView.frame.size.width, adView.frame.size.height);
+    CGSize placementSize = self.bannerPlacement.frame.size;
+    adView.frame = CGRectMake(0, 0, placementSize.width, placementSize.height);
     [self.bannerPlacement addSubview:adView];
     [self setReadyState];
 }

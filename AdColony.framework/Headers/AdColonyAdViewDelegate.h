@@ -2,7 +2,7 @@
 //  AdColonyAdViewDelegate.h
 //  adc-ios-sdk
 //
-//  Created by Michal Kluszewski on 8/7/19.
+//  Copyright © 2018 AdColony. All rights reserved.
 //
 
 @class AdColonyAdView;

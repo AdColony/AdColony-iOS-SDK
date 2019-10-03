@@ -2,7 +2,6 @@
 //  BannersViewController.swift
 //  AdColonyBasic
 //
-//  Created by Michal Kluszewski on 9/13/19.
 //  Copyright © 2019 AdColony. All rights reserved.
 //
 
@@ -47,9 +46,9 @@ class BannersViewController: UIViewController, AdColonyAdViewDelegate {
     
     func adColonyAdViewDidLoad(_ adView: AdColonyAdView) {
         self.clearBanner()
-        let x = (self.bannerPlacement.frame.size.width - adView.frame.size.width) / 2.0
-        let y = (self.bannerPlacement.frame.size.height - adView.frame.size.height) / 2.0
-        adView.frame = CGRect(x: x, y: y, width: adView.frame.size.width, height: adView.frame.size.height)
+        self.ad = adView
+        let placementSize = self.bannerPlacement.frame.size;
+        adView.frame = CGRect(x: 0, y: 0, width: placementSize.width, height: placementSize.height)
         self.bannerPlacement.addSubview(adView)
         self.setReadyState()
     }

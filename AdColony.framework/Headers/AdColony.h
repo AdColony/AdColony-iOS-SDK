@@ -2,7 +2,7 @@
 //  AdColony.h
 //  AdColony
 //
-//  Created by Eddie Hillenbrand on 5/31/18.
+//  Copyright © 2018 AdColony. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
