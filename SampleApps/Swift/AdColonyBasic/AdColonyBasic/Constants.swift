@@ -10,8 +10,8 @@ import Foundation
 
 struct Constants {
     
-    static let adColonyAppID = "app4bd1e9e7ce129"
-    static let adColonyInterstitialZoneID = "vzca5ca4437c5645ccb7"
-    static let adColonyBannerZoneID = "vz603ead1ff7ad41868e"
+    static let adColonyAppID = "appbdee68ae27024084bb334a"
+    static let adColonyInterstitialZoneID = "vzf8fb4670a60e4a139d01b5"
+    static let adColonyBannerZoneID = "vz77f5db656e2840c4ab"
     
 }
