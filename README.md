@@ -20,7 +20,7 @@ playable ads.
 
 ### 4.1.1
 
-* Bugfixes for displaying Open Measurement(OM) enabled Banner ads.
+* Bugfix for displaying Open Measurement(OM) enabled Banner ads.
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
