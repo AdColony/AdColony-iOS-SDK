@@ -1,4 +1,10 @@
 # Change Log
+
+## 4.1.2 (2019/10/22)
+* Added zone property to AdColonyAdRequest error
+* iOS 13 Scenes support
+* Bugfixes
+
 ## 4.1.1 (2019/10/02)
 * Bugfixes
 
