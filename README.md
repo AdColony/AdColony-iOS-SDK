@@ -18,7 +18,7 @@ playable ads.
 
 ## Release Notes
 
-### 4.1.1
+### 4.1.2
 
 * Added zone property to AdColonyAdRequest error
 * iOS 13 Scenes support
