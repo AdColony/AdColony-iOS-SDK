@@ -1,6 +1,6 @@
 # Change Log
 ## 4.1.1 (2019/10/02)
-* Bugfixes
+* Bugfix for displaying Open Measurement(OM) enabled Banner ads.
 
 ## 4.1.0 (2019/09/23)
 * Integration with OM SDK
