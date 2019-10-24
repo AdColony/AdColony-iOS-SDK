@@ -88,7 +88,13 @@ class ViewController: UIViewController, AdColonyInterstitialDelegate {
     }
     
     func adColonyInterstitialDidFail(toLoad error: AdColonyAdRequestError) {
-        print("SAMPLE_APP: Interstitial request failed with error: \(error.localizedDescription) and suggestion: \(error.localizedRecoverySuggestion!)")
+        if let reason = error.localizedFailureReason {
+            print("SAMPLE_APP: Interstitial request failed in zone \(error.zoneId) with error: \(error.localizedDescription) and failure reason: \(reason)")
+        } else if let recoverySuggestion = error.localizedRecoverySuggestion {
+            print("SAMPLE_APP: Interstitial request failed in zone \(error.zoneId) with error: \(error.localizedDescription) and recovery suggestion: \(recoverySuggestion)")
+        } else {
+            print("SAMPLE_APP: Interstitial request failed in zone \(error.zoneId) with error: \(error.localizedDescription)")
+        }
     }
     
     func adColonyInterstitialExpired(_ interstitial: AdColonyInterstitial) {
