@@ -1,4 +1,11 @@
 # Change Log
+
+## 4.1.2 (2019/10/23)
+* Added zone property to AdColonyAdRequest error
+* iOS 13 Scenes support
+* Updated OM SDK (no more UIWebView references)
+* Bugfixes
+
 ## 4.1.1 (2019/10/02)
 * Bugfixes
 

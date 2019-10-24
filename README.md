@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: October 2nd, 2019
-* SDK Version: 4.1.1
+* Modified: October 23nd, 2019
+* SDK Version: 4.1.2
 
 ## Overview
 
@@ -18,9 +18,12 @@ playable ads.
 
 ## Release Notes
 
-### 4.1.1
+### 4.1.2
 
-* Bugfix for displaying Open Measurement(OM) enabled Banner ads.
+* Added zone property to AdColonyAdRequest error
+* iOS 13 Scenes support
+* Updated OM SDK (no more UIWebView references)
+* Bugfixes
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)

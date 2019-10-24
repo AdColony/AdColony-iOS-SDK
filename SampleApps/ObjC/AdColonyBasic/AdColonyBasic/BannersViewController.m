@@ -67,7 +67,13 @@
 }
 
 - (void)adColonyAdViewDidFailToLoad:(AdColonyAdRequestError *)error {
-    NSLog(@"SAMPLE_APP: Banner request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
+    if (error.localizedFailureReason) {
+        NSLog(@"SAMPLE_APP: Banner request failed in zone %@ with error: %@ and failure reason: %@", error.zoneId, error.localizedDescription, error.localizedFailureReason);
+    } else if (error.localizedRecoverySuggestion) {
+        NSLog(@"SAMPLE_APP: Banner request failed in zone %@ with error: %@ and suggestion: %@", error.zoneId, error.localizedDescription, error.localizedRecoverySuggestion);
+    } else {
+        NSLog(@"SAMPLE_APP: Banner request failed in zone %@ with error: %@", error.zoneId, error.localizedDescription);
+    }
     [self setReadyState];
 }
 
