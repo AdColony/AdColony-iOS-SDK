@@ -38,6 +38,7 @@ To get started, here is the link to
 **Note:**
 
 * Tested and verified on iOS 13
+* Xcode 11 and up
 * Works on iOS 8 and above.
 * Not backwards compatible with any AdColony 2.0 integrations due to major API changes.
 
