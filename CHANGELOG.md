@@ -1,5 +1,8 @@
 # Change Log
 
+## 4.1.3 (2020/02/03)
+* Updated OM SDK to v1.3.0
+
 ## 4.1.2 (2019/10/23)
 * Added zone property to AdColonyAdRequest error
 * iOS 13 Scenes support
