@@ -1,5 +1,8 @@
 # Change Log
 
+## 4.1.4 (2020/02/21)
+* Updated OM SDK to v1.3.1
+
 ## 4.1.3 (2020/02/03)
 * Updated OM SDK to v1.3.0
 
