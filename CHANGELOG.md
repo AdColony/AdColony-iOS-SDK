@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.1.5 (2020/05/20)
+* Updated OM SDK to v1.3.4 (Removed complete UIWebView references)
+* Misc bugfixes.
+
 ## 4.1.4 (2020/02/21)
 * Updated OM SDK to v1.3.1
 
