@@ -81,7 +81,7 @@ FOUNDATION_EXPORT NSString *const ADCCocos2dx;
  @discussion Set this property to configure the desired orientation for your ads.
  @see AdColonyOrientation
  */
-@property (nonatomic, assign) AdColonyOrientation adOrientation;
+@property (nonatomic, assign) AdColonyOrientation adOrientation __attribute__((deprecated("Deprecated in v4.2.0")));
 
 /**
  @abstract Enables test ads for your application without changing dashboard settings.
