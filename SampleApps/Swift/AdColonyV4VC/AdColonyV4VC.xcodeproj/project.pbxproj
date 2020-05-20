@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17E727D61B1CDFA600143D53 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E727D51B1CDFA600143D53 /* AdColony.framework */; };
+		4D1F661C2475B87400EB805B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1F661B2475B87400EB805B /* CoreServices.framework */; };
 		4DA7E825232B738B00D1D20A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA7E824232B738B00D1D20A /* SafariServices.framework */; };
 		581A65781D46D93D0056EA3D /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 581A65771D46D93D0056EA3D /* libz.1.2.5.tbd */; };
 		9F53E56B1A6871C100783C3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53E56A1A6871C100783C3A /* AppDelegate.swift */; };
@@ -26,12 +27,12 @@
 		9F53E5AC1A68727300783C3A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53E59C1A68727300783C3A /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9F874CA91B9509F100B9F8D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F874CA71B9509F100B9F8D5 /* LaunchScreen.storyboard */; };
 		B724999E1FF4560000432118 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B724999D1FF4560000432118 /* WatchConnectivity.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B72499A01FF4561300432118 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B724999F1FF4561300432118 /* MobileCoreServices.framework */; };
 		B72499A21FF4561A00432118 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72499A11FF4561A00432118 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17E727D51B1CDFA600143D53 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
+		4D1F661B2475B87400EB805B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		4DA7E824232B738B00D1D20A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		581A65771D46D93D0056EA3D /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		9F53E5651A6871C100783C3A /* AdColonyV4VC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdColonyV4VC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,13 +77,13 @@
 				9F53E5A21A68727300783C3A /* CoreTelephony.framework in Frameworks */,
 				B72499A21FF4561A00432118 /* JavaScriptCore.framework in Frameworks */,
 				9F53E5A71A68727300783C3A /* MessageUI.framework in Frameworks */,
-				B72499A01FF4561300432118 /* MobileCoreServices.framework in Frameworks */,
 				9F53E5A91A68727300783C3A /* Social.framework in Frameworks */,
 				9F53E5AA1A68727300783C3A /* StoreKit.framework in Frameworks */,
 				9F53E5AB1A68727300783C3A /* SystemConfiguration.framework in Frameworks */,
 				B724999E1FF4560000432118 /* WatchConnectivity.framework in Frameworks */,
 				4DA7E825232B738B00D1D20A /* SafariServices.framework in Frameworks */,
 				9F53E5AC1A68727300783C3A /* WebKit.framework in Frameworks */,
+				4D1F661C2475B87400EB805B /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +157,7 @@
 		B724999C1FF4560000432118 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D1F661B2475B87400EB805B /* CoreServices.framework */,
 				4DA7E824232B738B00D1D20A /* SafariServices.framework */,
 				B72499A11FF4561A00432118 /* JavaScriptCore.framework */,
 				B724999F1FF4561300432118 /* MobileCoreServices.framework */,
@@ -378,7 +380,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4.1.4;
+				CURRENT_PROJECT_VERSION = 4.1.5;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,7 +389,7 @@
 				INFOPLIST_FILE = AdColonyV4VC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 4.1.4;
+				MARKETING_VERSION = 4.1.5;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,7 +407,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4.1.4;
+				CURRENT_PROJECT_VERSION = 4.1.5;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,7 +416,7 @@
 				INFOPLIST_FILE = AdColonyV4VC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 4.1.4;
+				MARKETING_VERSION = 4.1.5;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
