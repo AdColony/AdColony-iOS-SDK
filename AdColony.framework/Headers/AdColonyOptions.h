@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Sets a supported option.
  @discussion Use this method to set a string-based option with an arbitrary, string-based value.
  @param option An NSString representing the option.
- @param value An NSString used to configure the option. Strings must be 128 characters or less.
+ @param value An NSString used to configure the option.
  @return A BOOL indicating whether or not the option was set successfully.
  @see AdColonyAppOptions
  @see AdColonyAdOptions
