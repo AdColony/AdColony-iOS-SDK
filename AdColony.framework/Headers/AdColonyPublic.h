@@ -183,6 +183,15 @@ NS_ASSUME_NONNULL_BEGIN
  @return The current AdColony SDK version string.
  */
 + (NSString *)getSDKVersion;
+
+
+/**
+@abstract Gathers AdColony specific information to be passed into OpenRTB bid request.
+@discussion Gathers AdColony specific information to be passed into OpenRTB bid requests from a mediation setting.
+@return The String to be passed into OpenRTB bid requests, or an empty String if AdColony has not yet been configured.
+*/
++ (NSString *)collectSignals;
+
 @end
 
 NS_ASSUME_NONNULL_END
