@@ -1,5 +1,11 @@
 # Change Log
 
+## 4.2.0
+* Deprecated GDPR specific methods in AdColonyAppOptions in favor of a more generic solution that allows for inclusion of information related to other privacy laws. Please see our page on [privacy laws](https://github.com/AdColony/AdColony-iOS-SDK/wiki/Privacy-Laws) for more information.
+* Updated and added support for OM SDK v1.3.4.
+* Added `[AdColony collectSignals]` helper for certain advanced bidding mediation integrations.
+* Various bugfixes.
+
 ## 4.1.5 (2020/05/20)
 * Updated OM SDK to v1.3.4 (Removed complete UIWebView references)
 * Misc bugfixes.
@@ -50,7 +56,7 @@
 * Removed requirement for the camera and calendar permissions. However, with these permissions enabled, you may be able to receive higher paying ads.
 
 ## 3.3.4 (2018/05/18)
-* Added a new API to pass user consent as required for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of this new API to inform AdColony and all downstream consumers of the consent. Please see our [GDPR FAQ](https://www.adcolony.com/gdpr/) for more information and [our GDPR wiki](wiki/GDPR) for implementation details.
+* Added a new API to pass user consent as required for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of this new API to inform AdColony and all downstream consumers of the consent. Please see our [GDPR FAQ](https://www.adcolony.com/gdpr/) for more information and [our GDPR wiki](wiki/Privacy-Laws) for implementation details.
 * Fixed a bug where advertisement video's close button was not easily tappable because of the status bar overlapping.
 * Fixed a bug where unsafe access to the device's battery level was causing a crash.
 * Several bug fixes and stability improvements.
