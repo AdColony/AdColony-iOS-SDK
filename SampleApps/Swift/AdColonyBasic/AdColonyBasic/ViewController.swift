@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundation
+import StoreKit
 
 class ViewController: UIViewController, AdColonyInterstitialDelegate {
     
@@ -27,6 +28,10 @@ class ViewController: UIViewController, AdColonyInterstitialDelegate {
         
         self.bannersButton.alpha = 0
         self.bannersButton.isHidden = true
+        
+        if #available(iOS 14.0, *) {
+            SKAdNetwork.updateConversionValue(10)
+        }
         
         //Configure AdColony once
         AdColony.configure(withAppID: Constants.adColonyAppID, zoneIDs: [Constants.adColonyInterstitialZoneID, Constants.adColonyBannerZoneID], options: nil) { (zones) in

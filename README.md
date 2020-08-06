@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: July 7th, 2020
-* SDK Version: 4.2.0
+* Modified: August 5th, 2020
+* SDK Version: 4.3.0
 
 ## Overview
 
@@ -18,13 +18,10 @@ playable ads.
 
 ## Release Notes
 
-### 4.2.0
+### 4.3.0
 
-* Deprecated GDPR specific methods in AdColonyAppOptions in favor of a more generic solution that allows for inclusion of information related to other privacy laws. Please see our page on [privacy laws](https://github.com/AdColony/AdColony-iOS-SDK/wiki/Privacy-Laws) for more information.
-* Updated and added support for OM SDK v1.3.4.
-* Added `[AdColony collectSignals]` helper for certain advanced bidding mediation integrations.
-* Various bugfixes.
-
+* Support for SKAdnetwork attribution and upcoming iOS14 IDFA changes
+* Minor bugfixes and performance improvements
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
