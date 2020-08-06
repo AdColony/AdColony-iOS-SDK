@@ -1,6 +1,10 @@
 # Change Log
 
-## 4.2.0
+## 4.3.0 (2020/08/05)
+* Support for SKAdnetwork attribution and upcoming iOS14 IDFA changes
+* Minor bugfixes and performance improvements
+
+## 4.2.0 (2020/07/07)
 * Deprecated GDPR specific methods in AdColonyAppOptions in favor of a more generic solution that allows for inclusion of information related to other privacy laws. Please see our page on [privacy laws](https://github.com/AdColony/AdColony-iOS-SDK/wiki/Privacy-Laws) for more information.
 * Updated and added support for OM SDK v1.3.4.
 * Added `[AdColony collectSignals]` helper for certain advanced bidding mediation integrations.
