@@ -201,7 +201,6 @@
 				TargetAttributes = {
 					9FE0911F1A65B4CB001AA326 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 4PFYVQ9L8R;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -412,7 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 4.3.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adcolony.AdColonyBasic1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adcolony.AdColonyBasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
