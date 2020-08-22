@@ -1,5 +1,8 @@
 # Change Log
 
+### 4.3.1 (2020/08/21)
+* Added AdView request API that accepts AdOptions object
+
 ## 4.3.0 (2020/08/05)
 * Support for SKAdnetwork attribution and upcoming iOS14 IDFA changes
 * Minor bugfixes and performance improvements

@@ -84,6 +84,23 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)requestAdViewInZone:(NSString *)zoneID withSize:(AdColonyAdSize)size viewController:(UIViewController *)viewController andDelegate:(id<AdColonyAdViewDelegate>)delegate;
 
 /**
+ @abstract Request an AdColonyAdView.
+ @discussion This method returns immediately, before the ad request completes.
+ If the request is successful, an AdColonyAdView object will be passed to the success block.
+ If the request is unsuccessful, an AdColonyAdRequestError object will be passed to the failure block.
+ @param zoneID The AdColony zone identifier string indicating which zone the ad request is for.
+ @param size The desired size of the banner ad view.
+ @param options An AdColonyAdOptions object used to set configurable aspects of the ad request.
+ @param viewController Host view controller
+ @param delegate ad view delegate
+ @see AdColonyAdOptions
+ @see AdColonyAdView
+ @see AdColonyAdRequestError
+ */
++ (void)requestAdViewInZone:(NSString *)zoneID withSize:(AdColonyAdSize)size andOptions:(nullable AdColonyAdOptions *)options viewController:(UIViewController *)viewController andDelegate:(id<AdColonyAdViewDelegate>)delegate;
+
+
+/**
  @abstract Requests an AdColonyNativeAdView.
  @discussion This method returns immediately, before the ad request completes.
  If the request is successful, an AdColonyNativeAdView object will be passed to the success block.
