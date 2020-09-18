@@ -1,5 +1,5 @@
-#import "AdColonyOptions.h"
-#import "AdColonyTypes.h"
+#import <AdColony/AdColonyOptions.h>
+#import <AdColony/AdColonyTypes.h>
 #import <Foundation/Foundation.h>
 
 @class AdColonyUserMetadata;
