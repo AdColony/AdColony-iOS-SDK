@@ -1,4 +1,4 @@
-#import "AdColonyAdSize.h"
+#import <AdColony/AdColonyAdSize.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

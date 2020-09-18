@@ -1,5 +1,8 @@
 # Change Log
 
+## 4.4.0 (2020/09/18)
+* iOS14 support
+
 ### 4.3.1 (2020/08/21)
 * Added AdView request API that accepts AdOptions object
 

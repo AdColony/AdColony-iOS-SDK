@@ -1,13 +1,13 @@
-#import "AdColonyAdOptions.h"
-#import "AdColonyAdRequestError.h"
-#import "AdColonyAppOptions.h"
-#import "AdColonyEventTracker.h"
-#import "AdColonyInterstitial.h"
-#import "AdColonyNativeAdView.h"
-#import "AdColonyAdView.h"
-#import "AdColonyAdSize.h"
-#import "AdColonyUserMetadata.h"
-#import "AdColonyZone.h"
+#import <AdColony/AdColonyAdOptions.h>
+#import <AdColony/AdColonyAdRequestError.h>
+#import <AdColony/AdColonyAppOptions.h>
+#import <AdColony/AdColonyEventTracker.h>
+#import <AdColony/AdColonyInterstitial.h>
+#import <AdColony/AdColonyNativeAdView.h>
+#import <AdColony/AdColonyAdView.h>
+#import <AdColony/AdColonyAdSize.h>
+#import <AdColony/AdColonyUserMetadata.h>
+#import <AdColony/AdColonyZone.h>
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN

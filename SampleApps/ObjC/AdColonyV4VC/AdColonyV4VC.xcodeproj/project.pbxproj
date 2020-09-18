@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17E727D01B1CDA9300143D53 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E727CF1B1CDA9300143D53 /* AdColony.framework */; };
 		4D1F661E2475B8C500EB805B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1F661D2475B8C500EB805B /* CoreServices.framework */; };
+		4D5D71682514340A00081C51 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5D71672514340A00081C51 /* AppTrackingTransparency.framework */; };
 		4DA7E81F232B2CA300D1D20A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA7E81E232B2CA300D1D20A /* SafariServices.framework */; };
 		9F34E6E01CECEB91002AD562 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F34E6DF1CECEB91002AD562 /* JavaScriptCore.framework */; };
 		9F3D687A1B95079C008BD46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3D68781B95079C008BD46B /* LaunchScreen.storyboard */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		17E727CF1B1CDA9300143D53 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
 		4D1F661D2475B8C500EB805B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		4D5D71672514340A00081C51 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		4DA7E81E232B2CA300D1D20A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9F34E6DF1CECEB91002AD562 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		9F3D68791B95079C008BD46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdColonyV4VC/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6CEBB01BB0BC9A00AB531B /* libz.1.2.5.tbd in Frameworks */,
+				4D5D71682514340A00081C51 /* AppTrackingTransparency.framework in Frameworks */,
 				17E727D01B1CDA9300143D53 /* AdColony.framework in Frameworks */,
 				9F53E54B1A66FACC00783C3A /* AdSupport.framework in Frameworks */,
 				9F53E54C1A66FACC00783C3A /* AudioToolbox.framework in Frameworks */,
@@ -154,6 +157,7 @@
 		B724998C1FF4555500432118 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D5D71672514340A00081C51 /* AppTrackingTransparency.framework */,
 				4D1F661D2475B8C500EB805B /* CoreServices.framework */,
 				4DA7E81E232B2CA300D1D20A /* SafariServices.framework */,
 				B72499911FF4556C00432118 /* MobileCoreServices.framework */,
@@ -189,7 +193,7 @@
 		9F53E5071A66FA6000783C3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = AdColony;
 				TargetAttributes = {
 					9F53E50E1A66FA6000783C3A = {
@@ -286,6 +290,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -310,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +346,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -358,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +380,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4.3.1;
+				CURRENT_PROJECT_VERSION = 4.4.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
@@ -383,9 +389,9 @@
 					"$(PROJECT_DIR)/../../..",
 				);
 				INFOPLIST_FILE = AdColonyV4VC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 4.3.1;
+				MARKETING_VERSION = 4.4.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -401,7 +407,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4.3.1;
+				CURRENT_PROJECT_VERSION = 4.4.0;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -409,9 +415,9 @@
 					"$(PROJECT_DIR)/../../..",
 				);
 				INFOPLIST_FILE = AdColonyV4VC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 4.3.1;
+				MARKETING_VERSION = 4.4.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

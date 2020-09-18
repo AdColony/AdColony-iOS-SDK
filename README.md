@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: August 21st, 2020
-* SDK Version: 4.3.1
+* Modified: September 18th, 2020
+* SDK Version: 4.4.0
 
 ## Overview
 
@@ -18,9 +18,9 @@ playable ads.
 
 ## Release Notes
 
-### 4.3.1
+### 4.4.0
 
-* Added AdView request API that accepts AdOptions object
+* iOS 14 support
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
