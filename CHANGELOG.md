@@ -1,5 +1,8 @@
 # Change Log
 
+## 4.4.1 (2020/10/)
+* Added new PIE events
+
 ## 4.4.0 (2020/09/18)
 * iOS14 support
 
