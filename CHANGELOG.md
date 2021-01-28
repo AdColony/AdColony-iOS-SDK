@@ -1,5 +1,12 @@
 # Change Log
 
+## 4.5.0 (2021/01/28)
+
+* Improve audibility tracking/targeting
+* Asynchronous and improved collectSignals, deprecated synchronous version
+* Fixed recording of 'loaded' event against the OM SDK for display ads
+* Various bugfixes
+
 ## 4.4.1 (2020/10/09)
 * Added new PIE events
 
