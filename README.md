@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: October 9th, 2020
-* SDK Version: 4.4.1
+* Modified: January 28th, 2021
+* SDK Version: 4.5.0
 
 ## Overview
 
@@ -18,9 +18,12 @@ playable ads.
 
 ## Release Notes
 
-### 4.4.1
+### 4.5.0
 
-* Added new PIE events
+* Improve audibility tracking/targeting
+* Asynchronous and improved collectSignals, deprecated synchronous version
+* Fixed recording of 'loaded' event against the OM SDK for display ads
+* Various bugfixes
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
