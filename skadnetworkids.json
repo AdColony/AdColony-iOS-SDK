@@ -1,0 +1,191 @@
+{
+    "company_name": "AdColony",
+    "company_address": "1888 Century Park East, Suite 1450, Century City, CA 90067, USA",
+    "company_domain": "adcolony.com",
+    "skadnetwork_ids": [
+        {
+            "entity_name": "AdColony",
+            "entity_domain": "adcolony.com",
+            "skadnetwork_id": "4pfyvq9l8r.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "AdColony / Mobilike",
+            "entity_domain": "adcolony.com",
+            "skadnetwork_id": "6g9af3uyq4.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Aarki",
+            "entity_domain": "aarki.com",
+            "skadnetwork_id": "4fzdc2evr5.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Appier",
+            "entity_domain": "appier.com",
+            "skadnetwork_id": "v72qych5uu.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Appreciate",
+            "entity_domain": "appreciate.mobi",
+            "skadnetwork_id": "mlmmfzh3r3.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Beeswax",
+            "entity_domain": "beeswax.com",
+            "skadnetwork_id": "c6k4g5qg8m.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Criteo",
+            "entity_domain": "criteo.com",
+            "skadnetwork_id": "hs6bdukanm.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "CrossInstall (Twitter)",
+            "entity_domain": "crossinstall.com",
+            "skadnetwork_id": "prcb7njmu6.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Dataseat",
+            "entity_domain": "dataseat.com",
+            "skadnetwork_id": "m8dbw4sv7c.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Jampp",
+            "entity_domain": "jampp.com",
+            "skadnetwork_id": "yclnxrl5pm.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Kayzen",
+            "entity_domain": "kayzen.io",
+            "skadnetwork_id": "4468km3ulz.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "LifeStreet",
+            "entity_domain": "lifestreet.com",
+            "skadnetwork_id": "t38b2kh725.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Liftoff",
+            "entity_domain": "liftoff.io",
+            "skadnetwork_id": "7ug5zh24hu.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Loopme",
+            "entity_domain": "loopme.com",
+            "skadnetwork_id": "5lm9lj6jb7.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "manage.com",
+            "entity_domain": "criteo.com",
+            "skadnetwork_id": "9rd848q2bz.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "MediaSmart",
+            "entity_domain": "mediasmart.io",
+            "skadnetwork_id": "7rz58n8ntl.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "MMG",
+            "entity_domain": "mars.media",
+            "skadnetwork_id": "ejvt5qm6ak.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Moloco",
+            "entity_domain": "molocoads.com",
+            "skadnetwork_id": "9t245vhmpl.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Personaly",
+            "entity_domain": "persona.ly",
+            "skadnetwork_id": "44jx6755aq.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Pubnative",
+            "entity_domain": "pubnative.net",
+            "skadnetwork_id": "tl55sbb4fm.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Remerge",
+            "entity_domain": "remerge.io",
+            "skadnetwork_id": "2u9pt9hc89.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "RTB House",
+            "entity_domain": "rtbhouse.com",
+            "skadnetwork_id": "8s468mfl3y.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Sift",
+            "entity_domain": "sift.co",
+            "skadnetwork_id": "klf5c3l5u5.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Smadex",
+            "entity_domain": "smadex.com",
+            "skadnetwork_id": "ppxm28t8ap.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Valassis",
+            "entity_domain": "valassis.com",
+            "skadnetwork_id": "mtkv5xtk9e.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "entity_name": "Youappi",
+            "entity_domain": "youappi.com",
+            "skadnetwork_id": "3rd42ekr43.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.841Z"
+        },
+        {
+            "skadnetwork_id": "uw77j35x4d.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.842Z"
+        },
+        {
+            "skadnetwork_id": "u679fj5vs4.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.842Z"
+        },
+        {
+            "skadnetwork_id": "rx5hdcabgc.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.842Z"
+        },
+        {
+            "skadnetwork_id": "g28c52eehv.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.842Z"
+        },
+        {
+            "skadnetwork_id": "cg4yq2srnc.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.842Z"
+        },
+        {
+            "skadnetwork_id": "9nlqeag3gk.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.842Z"
+        },
+        {
+            "skadnetwork_id": "275upjj5gd.skadnetwork",
+            "creation_date": "2021-03-06T00:42:26.842Z"
+        }
+    ]
+}
