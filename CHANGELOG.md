@@ -1,5 +1,11 @@
 # Change Log
 
+## 4.6.0 (2021/04/02)
+
+* Optimize data returned via collectSignals() and its performance
+* Altered session measurement logic to reach parity with Android
+* Some light refactoring
+
 ## 4.5.0 (2021/01/28)
 
 * Improve audibility tracking/targeting
