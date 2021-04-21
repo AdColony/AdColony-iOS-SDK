@@ -2,8 +2,6 @@
 #import <AdColony/AdColonyTypes.h>
 #import <Foundation/Foundation.h>
 
-@class AdColonyUserMetadata;
-
 NS_ASSUME_NONNULL_BEGIN
 
 /**
