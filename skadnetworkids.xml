@@ -135,5 +135,9 @@
             <key>SKAdNetworkIdentifier</key>
             <string>uw77j35x4d.skadnetwork</string>
         </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>wg4vff78zm.skadnetwork</string>
+        </dict>
     </array>
 </plist>    
