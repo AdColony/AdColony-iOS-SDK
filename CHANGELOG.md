@@ -1,5 +1,10 @@
 # Change Log
 
+## 4.6.1 (2021/04/21)
+
+* SKAdNetwork view-through attribution support
+* [Build requires Xcode 12.5](https://developer.apple.com/news/?id=ib31uj1j)
+
 ## 4.6.0 (2021/04/02)
 
 * Optimize data returned via collectSignals() and its performance

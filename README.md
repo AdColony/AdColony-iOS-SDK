@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: April 2nd, 2021
-* SDK Version: 4.6.0
+* Modified: April 21nd, 2021
+* SDK Version: 4.6.1
 
 ## Overview
 
@@ -18,16 +18,14 @@ playable ads.
 
 ## Release Notes
 
-### 4.6.0
+### 4.6.1
 
-* Optimize data returned via collectSignals() and its performance
-* Altered session measurement logic to reach parity with Android
-* Some light refactoring
+* SKAdNetwork view-through attribution support
+* [Build requires Xcode 12.5](https://developer.apple.com/news/?id=ib31uj1j)
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
-for all the previous SDK versions and please check out the 3.3 SDK
-[integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
+for all the previous SDK versions.
 
 ## Getting Started
 
@@ -36,8 +34,10 @@ To get started, here is the link to
 
 **Note:**
 
-* Tested and verified on iOS 14
-* Xcode 12 and up
+Per Apple's direction, we have built our latest SDK against its iOS 14.5 release candidate (RC) as distributed to iOS developers on April 20th, 2021, and recommend all of our iOS publishing partners build against this release. Additionally, per Apple's documentation, ensure apps are submitted against the iOS 14.5 RC version, and built using Xcode 12.5 Release Candidate. Beginning Starting April 26, 2021, all iPhone and iPad apps submitted to the App Store must be built with Xcode 12 and the iOS 14 SDK or later. For further questions, please contact your AdColony Monetization Manager, or email support@adcolony.com.
+
+* Tested and verified on iOS 14.5
+* Xcode 12.5 and up
 * Works on iOS 9 and above.
 * Not backwards compatible with any AdColony 2.0 integrations due to major API changes.
 
