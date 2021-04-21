@@ -188,6 +188,12 @@
         {
             "skadnetwork_id": "275upjj5gd.skadnetwork",
             "creation_date": "2021-03-06T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Bid Machine",
+            "entity_domain": "bidmachine.io",
+            "skadnetwork_id": "wg4vff78zm.skadnetwork",
+            "creation_date": "2021-04-21-T00:42:26.842Z"
         }
     ]
 }
