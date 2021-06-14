@@ -200,6 +200,18 @@
             "entity_domain": "lunamedia.io",
             "skadnetwork_id": "qqp299437r.skadnetwork",
             "creation_date": "2021-04-26-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "StackAdapt",
+            "entity_domain": "stackadapt.com",
+            "skadnetwork_id": "kbmxgpxpgc.skadnetwork",
+            "creation_date": "2021-06-14-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "BidSwitch",
+            "entity_domain": "bidswitch.com",
+            "skadnetwork_id": "294l99pt4k.skadnetwork",
+            "creation_date": "2021-06-14-T00:42:26.842Z"
         }
     ]
 }
