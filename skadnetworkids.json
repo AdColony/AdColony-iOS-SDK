@@ -212,6 +212,126 @@
             "entity_domain": "bidswitch.com",
             "skadnetwork_id": "294l99pt4k.skadnetwork",
             "creation_date": "2021-06-14-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Adform",
+            "entity_domain": "site.adform.com",
+            "skadnetwork_id": "2fnua5tdw4.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Adikteev",
+            "entity_domain": "adikteev.com",
+            "skadnetwork_id": "ydx93a7ass.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Bidsopt",
+            "entity_domain": "bidsopt.com",
+            "skadnetwork_id": "523jb4fst2.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "StartApp",
+            "entity_domain": "start.io",
+            "skadnetwork_id": "5l3tpt7t6e.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Engage:BDR",
+            "entity_domain": "engagebdr.com",
+            "skadnetwork_id": "cj5566h2ga.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Verizon",
+            "entity_domain": "verizon.com",
+            "skadnetwork_id": "e5fvkxwrpn.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "WidenAd",
+            "entity_domain": "widenad.com",
+            "skadnetwork_id": "r45fhb6rf7.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Vungle",
+            "entity_domain": "vungle.com",
+            "skadnetwork_id": "gta9lk7p23.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Tradedoubler",
+            "entity_domain": "tradedoubler.com",
+            "skadnetwork_id": "84993kbrcf.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "GlobalWide Media",
+            "entity_domain": "globalwidemedia.com",
+            "skadnetwork_id": "g2y4y55b64.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Avazu",
+            "entity_domain": "avazu.com",
+            "skadnetwork_id": "pwdxu55a5a.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "InMobi",
+            "entity_domain": "inmobi.com",
+            "skadnetwork_id": "wzmmz9fp6w.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "ThingOrTwo",
+            "entity_domain": "thing02.com",
+            "skadnetwork_id": "6964rsfnh4.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Mediamath",
+            "entity_domain": "mediamath.com",
+            "skadnetwork_id": "n6fk4nfna4.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Glispa",
+            "entity_domain": "glispa.com",
+            "skadnetwork_id": "a7xqa6mtl2.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Mobvista",
+            "entity_domain": "mobvista.com",
+            "skadnetwork_id": "kbd757ywx3.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "MyTarget",
+            "entity_domain": "my.com",
+            "skadnetwork_id": "n9x2a789qt.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Tremor",
+            "entity_domain": "rhythmone.com",
+            "skadnetwork_id": "pwa73g5rt2.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "SmartyAds",
+            "entity_domain": "smartyads.com",
+            "skadnetwork_id": "74b6s63p6l.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Spyke Media",
+            "entity_domain": "spykemedia.com",
+            "skadnetwork_id": "44n7hlldy6.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
         }
     ]
 }
