@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: April 21st, 2021
-* SDK Version: 4.6.1
+* Modified: August 3rd, 2021
+* SDK Version: 4.7.0
 
 ## Overview
 
@@ -18,10 +18,18 @@ playable ads.
 
 ## Release Notes
 
-### 4.6.1
+### 4.7.0
 
-* SKAdNetwork view-through attribution support
-* [Build requires Xcode 12.5](https://developer.apple.com/news/?id=ib31uj1j)
+* Internal communication adjustments to improve CPU usage and battery life
+* Additional ad request safety to avoid potential timeouts
+* Fixed issue where interstitial ad show attempts would fail without feedback when a network filter mismatch occurred
+* Optimized data returned via collectSignals()
+* Fixed edge case ad playback issues due to SKStoreProductController
+* Internal file directory refactoring to reach parity with Android behavior
+* Fixed race condition where asynchronous collectSignals() would return an empty String
+* Removed public block interface and native ad view API
+* Mac M1 emulator support
+* Various other bug fixes and performance improvements
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)

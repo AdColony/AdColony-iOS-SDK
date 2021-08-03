@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17E727D21B1CDD4400143D53 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E727D11B1CDD4400143D53 /* AdColony.framework */; };
 		4D1F661A2475B7AA00EB805B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1F66192475B7AA00EB805B /* CoreServices.framework */; };
 		4D5D716C2514345E00081C51 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5D716B2514345E00081C51 /* AppTrackingTransparency.framework */; };
 		4DA7E827232B741900D1D20A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7E826232B741900D1D20A /* Constants.swift */; };
 		4DA7E829232B77F300D1D20A /* BannersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7E828232B77F300D1D20A /* BannersViewController.swift */; };
 		581A657A1D46D98F0056EA3D /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 581A65791D46D98F0056EA3D /* libz.1.2.5.tbd */; };
+		9EE0122A26B949B6004614BB /* AdColony.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE0122926B949B6004614BB /* AdColony.xcframework */; };
 		9F874CA61B95095000B9F8D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F874CA41B95095000B9F8D5 /* LaunchScreen.storyboard */; };
 		9FE091261A65B4CB001AA326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE091251A65B4CB001AA326 /* AppDelegate.swift */; };
 		9FE091281A65B4CB001AA326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE091271A65B4CB001AA326 /* ViewController.swift */; };
@@ -33,12 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17E727D11B1CDD4400143D53 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
 		4D1F66192475B7AA00EB805B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		4D5D716B2514345E00081C51 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		4DA7E826232B741900D1D20A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4DA7E828232B77F300D1D20A /* BannersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersViewController.swift; sourceTree = "<group>"; };
 		581A65791D46D98F0056EA3D /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		9EE0122926B949B6004614BB /* AdColony.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AdColony.xcframework; path = ../../../../AdColony.xcframework; sourceTree = "<group>"; };
 		9F874CA51B95095000B9F8D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdColonyBasic/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE091201A65B4CB001AA326 /* AdColonyBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdColonyBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE091241A65B4CB001AA326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +74,6 @@
 			files = (
 				581A657A1D46D98F0056EA3D /* libz.1.2.5.tbd in Frameworks */,
 				4D5D716C2514345E00081C51 /* AppTrackingTransparency.framework in Frameworks */,
-				17E727D21B1CDD4400143D53 /* AdColony.framework in Frameworks */,
 				9FE091581A65B546001AA326 /* AdSupport.framework in Frameworks */,
 				9FE091591A65B546001AA326 /* AudioToolbox.framework in Frameworks */,
 				9FE0915A1A65B546001AA326 /* AVFoundation.framework in Frameworks */,
@@ -82,6 +81,7 @@
 				9FE0915D1A65B546001AA326 /* CoreTelephony.framework in Frameworks */,
 				B72499991FF455EC00432118 /* JavaScriptCore.framework in Frameworks */,
 				9FE091621A65B546001AA326 /* MessageUI.framework in Frameworks */,
+				9EE0122A26B949B6004614BB /* AdColony.xcframework in Frameworks */,
 				9FE091641A65B546001AA326 /* Social.framework in Frameworks */,
 				B724999B1FF455F000432118 /* StoreKit.framework in Frameworks */,
 				9FE091661A65B546001AA326 /* SystemConfiguration.framework in Frameworks */,
@@ -139,7 +139,7 @@
 		9FE091451A65B4F3001AA326 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				17E727D11B1CDD4400143D53 /* AdColony.framework */,
+				9EE0122926B949B6004614BB /* AdColony.xcframework */,
 				9FE091481A65B546001AA326 /* AdSupport.framework */,
 				9FE091491A65B546001AA326 /* AudioToolbox.framework */,
 				9FE0914A1A65B546001AA326 /* AVFoundation.framework */,
@@ -392,8 +392,9 @@
 					"-fobjc-arc",
 				);
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AdColonyBasic/AdColonyBasic-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -415,7 +416,10 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = AdColonyBasic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 4.6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adcolony.AdColonyBasic;
@@ -444,7 +448,10 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = AdColonyBasic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 4.6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";

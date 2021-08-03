@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		173359881B1CC2A90001CD3D /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173359871B1CC2A90001CD3D /* AdColony.framework */; };
 		4D1F66162475B6AE00EB805B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1F66152475B6AE00EB805B /* CoreServices.framework */; };
 		4D5D7164251432CE00081C51 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5D7163251432CE00081C51 /* AppTrackingTransparency.framework */; };
 		4DA7E81D232B120500D1D20A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA7E81C232B120500D1D20A /* SafariServices.framework */; };
 		4DA7E822232B51DD00D1D20A /* BannersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7E821232B51DD00D1D20A /* BannersViewController.m */; };
+		9EE0122626B9492B004614BB /* AdColony.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE0122526B9492B004614BB /* AdColony.xcframework */; };
 		9F0453681B16358B0016DE3B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0453671B16358B0016DE3B /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9F34E6DE1CECDAB5002AD562 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F34E6DD1CECDAB5002AD562 /* JavaScriptCore.framework */; };
 		9F6CEBAE1BB0BC7D00AB531B /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CEBAD1BB0BC7D00AB531B /* libz.1.2.5.tbd */; };
@@ -34,13 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		173359871B1CC2A90001CD3D /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
 		4D1F66152475B6AE00EB805B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		4D5D7163251432CE00081C51 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		4DA7E81C232B120500D1D20A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		4DA7E820232B51DD00D1D20A /* BannersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannersViewController.h; sourceTree = "<group>"; };
 		4DA7E821232B51DD00D1D20A /* BannersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannersViewController.m; sourceTree = "<group>"; };
 		4DA7E823232B6BA000D1D20A /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		9EE0122526B9492B004614BB /* AdColony.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AdColony.xcframework; path = ../../../../AdColony.xcframework; sourceTree = "<group>"; };
 		9F0453671B16358B0016DE3B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9F34E6DD1CECDAB5002AD562 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		9F6CEBAD1BB0BC7D00AB531B /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -75,10 +75,10 @@
 			files = (
 				9F6CEBAE1BB0BC7D00AB531B /* libz.1.2.5.tbd in Frameworks */,
 				4D5D7164251432CE00081C51 /* AppTrackingTransparency.framework in Frameworks */,
-				173359881B1CC2A90001CD3D /* AdColony.framework in Frameworks */,
 				9FC459D91A65E6FF00B07E6F /* AdSupport.framework in Frameworks */,
 				9FC459DA1A65E6FF00B07E6F /* AudioToolbox.framework in Frameworks */,
 				9FC459DB1A65E6FF00B07E6F /* AVFoundation.framework in Frameworks */,
+				9EE0122626B9492B004614BB /* AdColony.xcframework in Frameworks */,
 				B72499891FF4551F00432118 /* CoreMedia.framework in Frameworks */,
 				9FC459DE1A65E6FF00B07E6F /* CoreTelephony.framework in Frameworks */,
 				9F34E6DE1CECDAB5002AD562 /* JavaScriptCore.framework in Frameworks */,
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9F6CEBAD1BB0BC7D00AB531B /* libz.1.2.5.tbd */,
-				173359871B1CC2A90001CD3D /* AdColony.framework */,
+				9EE0122526B9492B004614BB /* AdColony.xcframework */,
 				9FC459C91A65E6FF00B07E6F /* AdSupport.framework */,
 				9FC459CA1A65E6FF00B07E6F /* AudioToolbox.framework */,
 				9FC459CB1A65E6FF00B07E6F /* AVFoundation.framework */,
@@ -398,7 +398,10 @@
 				);
 				INFOPLIST_FILE = AdColonyBasic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 4.6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
@@ -421,7 +424,10 @@
 				);
 				INFOPLIST_FILE = AdColonyBasic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 4.6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
