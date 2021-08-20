@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.7.1 (2021/08/20)
+
+* Fixed NSInvalidArgumentException exposed in 4.7.0
+
 ## 4.7.0 (2021/08/03)
 
 * Internal communication adjustments to improve CPU usage and battery life

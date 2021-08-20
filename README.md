@@ -18,18 +18,9 @@ playable ads.
 
 ## Release Notes
 
-### 4.7.0
+### 4.7.1
 
-* Internal communication adjustments to improve CPU usage and battery life
-* Additional ad request safety to avoid potential timeouts
-* Fixed issue where interstitial ad show attempts would fail without feedback when a network filter mismatch occurred
-* Optimized data returned via collectSignals()
-* Fixed edge case ad playback issues due to SKStoreProductController
-* Internal file directory refactoring to reach parity with Android behavior
-* Fixed race condition where asynchronous collectSignals() would return an empty String
-* Removed public block interface and native ad view API
-* Mac M1 emulator support
-* Various other bug fixes and performance improvements
+* Fixed NSInvalidArgumentException exposed in 4.7.0
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
