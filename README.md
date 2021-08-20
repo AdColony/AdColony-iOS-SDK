@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: August 3rd, 2021
-* SDK Version: 4.7.0
+* Modified: August 20th, 2021
+* SDK Version: 4.7.1
 
 ## Overview
 
