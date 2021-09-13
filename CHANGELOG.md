@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.7.2 (2021/09/13)
+
+* Added additional SKOverlay controls for creatives.
+
 ## 4.7.1 (2021/08/20)
 
 * Fixed NSInvalidArgumentException exposed in 4.7.0

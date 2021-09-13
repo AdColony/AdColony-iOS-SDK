@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: August 20th, 2021
-* SDK Version: 4.7.1
+* Modified: September 13th, 2021
+* SDK Version: 4.7.2
 
 ## Overview
 
@@ -18,9 +18,9 @@ playable ads.
 
 ## Release Notes
 
-### 4.7.1
+### 4.7.2
 
-* Fixed NSInvalidArgumentException exposed in 4.7.0
+* Added additional SKOverlay controls for creatives.
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
