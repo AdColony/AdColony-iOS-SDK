@@ -31,11 +31,8 @@ for all the previous SDK versions.
 To get started, here is the link to
 [iOS SDK integration documentation](https://github.com/AdColony/AdColony-iOS-SDK/wiki).
 
-**Note:**
 
-Per Apple's direction, we have built our latest SDK against its iOS 14.5 release candidate (RC) as distributed to iOS developers on April 20th, 2021, and recommend all of our iOS publishing partners build against this release. Additionally, per Apple's documentation, ensure apps are submitted against the iOS 14.5 RC version, and built using Xcode 12.5 Release Candidate. Beginning Starting April 26, 2021, all iPhone and iPad apps submitted to the App Store must be built with Xcode 12 and the iOS 14 SDK or later. For further questions, please contact your AdColony Monetization Manager, or email support@adcolony.com.
-
-* Tested and verified on iOS 14.5
+* Tested and verified on iOS 14.5+, 15.0
 * Xcode 12.5 and up
 * Works on iOS 9 and above.
 * Not backwards compatible with any AdColony 2.0 integrations due to major API changes.
