@@ -332,6 +332,12 @@
             "entity_domain": "spykemedia.com",
             "skadnetwork_id": "44n7hlldy6.skadnetwork",
             "creation_date": "2021-06-28-T00:42:26.842Z"
+        },
+        {
+            "entity_name": "Unicorn",
+            "entity_domain": "uncn.jp",
+            "skadnetwork_id": "578prtvx9j.skadnetwork",
+            "creation_date": "2021-06-28-T00:42:26.842Z"
         }
     ]
 }
