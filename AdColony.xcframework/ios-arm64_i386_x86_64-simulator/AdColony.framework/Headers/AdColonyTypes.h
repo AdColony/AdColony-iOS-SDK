@@ -21,6 +21,9 @@ typedef NS_ENUM(NSUInteger, AdColonyRequestError) {
     
     /** This iOS version is no longer supported. */
     AdColonyRequestErrorFeatureUnsupported,
+
+    /** Unexpected result */
+    AdColonyRequestErrorUnexpected
 };
 
 /**

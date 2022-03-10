@@ -1,5 +1,15 @@
 # Change Log
 
+## 4.8.0 (2022/3/10)
+
+* Changed configure interface, deprecated old one
+* Allow banner ad request to be made without UIViewController at the time of request
+* Updated OM SDK to v1.3.30 (fix javascript crash)
+* Fixed SDK overwriting app audio session category
+* Fixed ad freeze due to untimely setting of audio session
+* Fixed app freeze if user manages to close the ad while store view is being loaded
+* Fixed NSInvalidArgumentException '[__NSPlaceholderDictionary initWithObjects:forKeys:count]: attempt to insert nil'
+
 ## 4.7.2 (2021/09/13)
 
 * Added additional SKOverlay controls for creatives.

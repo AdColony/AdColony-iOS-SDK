@@ -59,9 +59,16 @@
 
 @end
 
+@protocol AdColonyAdViewAdvancedDelegate <AdColonyAdViewDelegate>
 
-#ifndef AdColonyAdViewDelegate_h
-#define AdColonyAdViewDelegate_h
+@required
 
+/**
+ @abstract Host view controller request
+ @discussion Requests hosting view controller when needed if it wasn't provided during ad request.
+ @param adView The ad view which requests host view controller.
+ @return view controller that hosts given ad view
+ */
+- (UIViewController * _Nonnull)adColonyAdViewHostViewController:(AdColonyAdView * _Nonnull)adView;
 
-#endif /* AdColonyAdViewDelegate_h */
+@end

@@ -8,6 +8,7 @@
 @class AdColonyZone;
 
 @protocol AdColonyAdViewDelegate;
+@protocol AdColonyAdViewAdvancedDelegate;
 @protocol AdColonyInterstitialDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -18,6 +19,24 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AdColony : NSObject
 
 /** @name Starting AdColony */
+
+- (instancetype)init NS_UNAVAILABLE;
+
+/**
+ @abstract Configures AdColony specifically for your app; required for usage of the rest of the API.
+ @discussion This method returns immediately; any long-running work such as network connections are performed in the background.
+ AdColony does not begin preparing ads for display or performing reporting until after it is configured by your app.
+ The required appID parameter for this method can be created and retrieved at the [Control Panel](http://clients.adcolony.com).
+ If appID is `nil`, app will be unable to play ads and AdColony will only provide limited reporting and install-tracking functionality.
+ Please note the completion handler. You should not start requesting ads until it has fired.
+ If there is a configuration error, the set of zones passed to the completion handler will be nil.
+ @param appID The AdColony app ID for your app.
+ @param options (optional) Configuration options for your app.
+ @param completion (optional) A block of code to be executed upon completion of the configuration operation. Dispatched on main thread.
+ @see AdColonyAppOptions
+ @see AdColonyZone
+ */
++ (void)configureWithAppID:(NSString *)appID options:(nullable AdColonyAppOptions *)options completion:(nullable void (^)(NSArray<AdColonyZone *> *zones))completion;
 
 /**
  @abstract Configures AdColony specifically for your app; required for usage of the rest of the API.
@@ -33,8 +52,9 @@ NS_ASSUME_NONNULL_BEGIN
  @param completion (optional) A block of code to be executed upon completion of the configuration operation. Dispatched on main thread.
  @see AdColonyAppOptions
  @see AdColonyZone
+ @deprecated please use configure without zoneIDs
  */
-+ (void)configureWithAppID:(NSString *)appID zoneIDs:(NSArray<NSString *> *)zoneIDs options:(nullable AdColonyAppOptions *)options completion:(nullable void (^)(NSArray<AdColonyZone *> *zones))completion;
++ (void)configureWithAppID:(NSString *)appID zoneIDs:(NSArray<NSString *> *)zoneIDs options:(nullable AdColonyAppOptions *)options completion:(nullable void (^)(NSArray<AdColonyZone *> *zones))completion __attribute__((deprecated("Deprecated in v4.8.0")));
 
 /**
  @abstract Requests an AdColonyInterstitial.
@@ -81,6 +101,21 @@ NS_ASSUME_NONNULL_BEGIN
  @see AdColonyAdRequestError
  */
 + (void)requestAdViewInZone:(NSString *)zoneID withSize:(AdColonyAdSize)size andOptions:(nullable AdColonyAdOptions *)options viewController:(UIViewController *)viewController andDelegate:(id<AdColonyAdViewDelegate>)delegate;
+
+/**
+ @abstract Request an AdColonyAdView.
+ @discussion This method returns immediately, before the ad request completes.
+ If the request is successful, an AdColonyAdView object will be passed to the delegate adColonyAdViewDidLoad: method.
+ If the request is unsuccessful, an AdColonyAdRequestError object will be passed to the delegate adColonyAdViewDidFailToLoad method.
+ @param zoneID The AdColony zone identifier string indicating which zone the ad request is for.
+ @param size The desired size of the banner ad view.
+ @param options An AdColonyAdOptions object used to set configurable aspects of the ad request.
+ @param delegate ad view advanced delegate
+ @see AdColonyAdOptions
+ @see AdColonyAdView
+ @see AdColonyAdRequestError
+ */
++ (void)requestAdViewInZone:(NSString *)zoneID withSize:(AdColonyAdSize)size options:(nullable AdColonyAdOptions *)options andDelegate:(id<AdColonyAdViewAdvancedDelegate>)delegate;
 
 /** @name Zone */
 

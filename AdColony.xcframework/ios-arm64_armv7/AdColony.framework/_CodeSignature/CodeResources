@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/AdColonyAdView.h</key>
 		<data>
-		XxP3Jjab5afk0kCXZpiW5U0SmGc=
+		LlbLgL75+6g6Q7fFLSJ4TXmc6NQ=
 		</data>
 		<key>Headers/AdColonyAdViewDelegate.h</key>
 		<data>
-		MxJTDpv48kltPCJO1JfSSJMbenc=
+		1ZgRVagJk2s5tNqhlf3BzwdMPiQ=
 		</data>
 		<key>Headers/AdColonyAppOptions.h</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Headers/AdColonyPublic.h</key>
 		<data>
-		sELZc85rp+S8u0Do3N4oLG8jPm4=
+		hmWt5Uo1HM92uGnU438H2hviduQ=
 		</data>
 		<key>Headers/AdColonyTypes.h</key>
 		<data>
-		Uza0maPO4B9XWWPa1OCzhLloWGk=
+		j1CJiFoNc4XD1P+ti6WXuvWwKd4=
 		</data>
 		<key>Headers/AdColonyUserMetadata.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sX4IkCZzDLLpUIfB+KEN8c7k43w=
+		MjlVHbo/aokEyU+74trePXleHgA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -123,22 +123,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XxP3Jjab5afk0kCXZpiW5U0SmGc=
+			LlbLgL75+6g6Q7fFLSJ4TXmc6NQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vjXfpAmtC04pU+GGAfSGJKDBeigrbkgVFZxStvo6zyg=
+			EZ82RSC0gLSrYIRptT977PZsTbWfVWOFsTebt/ouJ2M=
 			</data>
 		</dict>
 		<key>Headers/AdColonyAdViewDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MxJTDpv48kltPCJO1JfSSJMbenc=
+			1ZgRVagJk2s5tNqhlf3BzwdMPiQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			9HhugofD8MimsBp1YK+HXniczyeh1FnVhbu3PsdVBTA=
+			ikfrOKsj+MwyaJAd/iH+7QN4ZxDGcKPjU7gvNtTkRm0=
 			</data>
 		</dict>
 		<key>Headers/AdColonyAppOptions.h</key>
@@ -200,22 +200,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sELZc85rp+S8u0Do3N4oLG8jPm4=
+			hmWt5Uo1HM92uGnU438H2hviduQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			uM2xJqiA87cgKe5+Uv0wKakNa1YxBs+xWXbfo4NxhWQ=
+			Iywqq2KCXn7spN/cg6RmH6l6+zC5N16w7zmcDQGxbGM=
 			</data>
 		</dict>
 		<key>Headers/AdColonyTypes.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Uza0maPO4B9XWWPa1OCzhLloWGk=
+			j1CJiFoNc4XD1P+ti6WXuvWwKd4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZY0YcIi8nHV59ic8iQcsjxQSiJ6IT8LCb8FSJ9ma2QI=
+			zCmvdDRrfT4EiIVDp8TPlwTXMDsCARyF7hMGhEweM+Q=
 			</data>
 		</dict>
 		<key>Headers/AdColonyUserMetadata.h</key>

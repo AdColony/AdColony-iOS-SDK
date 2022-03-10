@@ -19,12 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) NSString *zoneID;
 
 /**
- @abstract AdColonyAdView's delegate.
- @discussion Use this delegate to get ad event callbacks.
- */
-@property (nonatomic, weak, nullable) id<AdColonyAdViewDelegate> delegate __attribute__((deprecated("Deprecated in v4.7.0")));
-
-/**
  @abstract Indicates that the AdColonyAdView has been removed from the view hierarchy and should be destroyed.
  @discussion The AdColony SDK maintains internal resources when the ad is being displayed.
  When this method is called, all internal resources are destroyed and the associated memory is freed.

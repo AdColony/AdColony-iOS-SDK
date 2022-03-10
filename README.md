@@ -1,6 +1,6 @@
 # AdColony iOS SDK
-* Modified: September 13th, 2021
-* SDK Version: 4.7.2
+* Modified: March 10th, 2022
+* SDK Version: 4.8.0
 
 ## Overview
 
@@ -18,9 +18,15 @@ playable ads.
 
 ## Release Notes
 
-### 4.7.2
+### 4.8.0
 
-* Added additional SKOverlay controls for creatives.
+* Changed configure interface, deprecated old one
+* Allow banner ad request to be made without UIViewController at the time of request
+* Updated OM SDK to v1.3.30 (fix javascript crash)
+* Fixed SDK overwriting app audio session category
+* Fixed ad freeze due to untimely setting of audio session
+* Fixed app freeze if user manages to close the ad while store view is being loaded
+* Fixed NSInvalidArgumentException '[__NSPlaceholderDictionary initWithObjects:forKeys:count]: attempt to insert nil'
 
 Here is the link to the
 [release notes](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md)
