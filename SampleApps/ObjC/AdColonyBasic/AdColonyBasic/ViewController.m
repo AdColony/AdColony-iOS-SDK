@@ -37,7 +37,7 @@
     self.bannersButton.hidden = YES;
     
     //Configure AdColony as soon as the app starts
-    [AdColony configureWithAppID:kAdColonyAppID zoneIDs:@[kAdColonyInterstitialZoneID, kAdColonyBannerZoneID] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
+    [AdColony configureWithAppID:kAdColonyAppID options:nil completion:^(NSArray<AdColonyZone *> * zones) {
         self.bannersButton.hidden = NO;
         [UIView animateWithDuration:1.0 animations:^{
             self.bannersButton.alpha = 1.0;

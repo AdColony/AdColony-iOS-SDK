@@ -29,7 +29,7 @@ class ViewController: UIViewController, AdColonyInterstitialDelegate {
         self.bannersButton.isHidden = true
         
         //Configure AdColony once
-        AdColony.configure(withAppID: Constants.adColonyAppID, zoneIDs: [Constants.adColonyInterstitialZoneID, Constants.adColonyBannerZoneID], options: nil) { (zones) in
+        AdColony.configure(withAppID: Constants.adColonyAppID, options: nil) { (zones) in
             
             //AdColony has finished configuring, so let's request an interstitial ad
             self.requestInterstitial()

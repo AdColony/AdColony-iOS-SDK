@@ -36,7 +36,7 @@ class ViewController: UIViewController, AdColonyInterstitialDelegate {
         super.viewDidLoad()
         
         //Initialize AdColony on initial launch
-        AdColony.configure(withAppID: Constants.adColonyAppID, zoneIDs: [Constants.adColonyZoneID], options: nil) { [weak self] (zones) in
+        AdColony.configure(withAppID: Constants.adColonyAppID, options: nil) { [weak self] (zones) in
             //Set the zone's reward handler
             //This implementation is designed for client-side virtual currency without a server
             //It uses NSUserDefaults for persistent client-side storage of the currency balance

@@ -42,7 +42,7 @@
     __weak typeof(self) weakSelf = self;
     
     //Initialize AdColony on initial launch
-    [AdColony configureWithAppID:kAdColonyAppID zoneIDs:@[kAdColonyZoneID] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
+    [AdColony configureWithAppID:kAdColonyAppID options:nil completion:^(NSArray<AdColonyZone *> * zones) {
         
         //Set the zone's reward handler
         //This implementation is designed for client-side virtual currency without a server
