@@ -220,6 +220,7 @@ NS_ASSUME_NONNULL_BEGIN
 @abstract Gathers AdColony specific information to be passed into OpenRTB bid request.
 @discussion Gathers AdColony specific information to be passed into OpenRTB bid requests from a mediation setting.
 @param completion A block of code to be executed when collection finishes, with result or error, on target dispatch. If nil dispatch is provided, this method behaves like collectSignals:.
+@param dispatch Target dispatch queue for completion callback block
 */
 + (void)collectSignals:(nonnull void (^)(NSString * _Nullable signals, NSError * _Nullable error))completion targetDispatch:(nullable dispatch_queue_t)dispatch;
 

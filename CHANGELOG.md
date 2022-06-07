@@ -1,5 +1,10 @@
 # Change Log
 
+## 4.9.0 (2022/6/7)
+
+* Added `adColonyAdViewDidShow:` api to AdView delegate
+* Fixed crash (SIGSEGV/fwrite)
+
 ## 4.8.0 (2022/3/10)
 
 * Changed configure interface, deprecated old one

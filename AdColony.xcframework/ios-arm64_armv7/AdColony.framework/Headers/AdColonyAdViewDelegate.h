@@ -30,6 +30,13 @@
 
 @optional
 /**
+ @abstract Did show notification
+ @discussion Ad view was added to a view with active window
+ @param adView Shown ad view
+ */
+- (void)adColonyAdViewDidShow:(AdColonyAdView * _Nonnull)adView;
+
+/**
  @abstract Application leave notification
  @discussion Notifies you when ad view is going to redirect user to content outside of the application.
  @param adView The ad view which caused the user to leave the application.
@@ -59,6 +66,9 @@
 
 @end
 
+/**
+ * The delegate of an AdColonyAdView object. This delegate receives ad view lifecycle notifications.
+ */
 @protocol AdColonyAdViewAdvancedDelegate <AdColonyAdViewDelegate>
 
 @required
