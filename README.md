@@ -1,3 +1,12 @@
+
+# $${\color{red}Deprecated}$$
+
+This library has been depracated, please visit [https://www.digitalturbine.com/app-developers/#monetizationsolutions](https://www.digitalturbine.com/app-developers/#monetizationsolutions) website for alternative options.
+
+----------------------------
+
+
+
 # AdColony iOS SDK
 * Modified: June 7th, 2022
 * SDK Version: 4.9.0
